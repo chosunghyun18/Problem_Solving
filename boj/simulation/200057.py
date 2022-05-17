@@ -1,4 +1,4 @@
-# import pandas as pd
+import pandas as pd
 def calculatesand(n, next_x, next_y, outsand, po, given):
     # print("this is x and y:",next_x,next_y)
     # print("this is po:",po)
@@ -35,6 +35,10 @@ def calculatesand(n, next_x, next_y, outsand, po, given):
 
     given[next_y][next_x] = 0
 
+    print("------")
+    print(pd.DataFrame(given))
+    print(":",outsand)
+    print("------")
     return outsand, given
 
 
@@ -101,7 +105,6 @@ def solv(n, given, visit):  # main  function to move
 
 n = int(input())
 given = [list(map(int, input().split())) for _ in range(n)]
-
 visit = [[0] * n for _ in range(n)]
 
 dicratio = {
