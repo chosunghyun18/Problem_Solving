@@ -3,21 +3,6 @@
 
 
 
-
-a= "fdfdf"
-print(len(a))
-
-
-
-
-b = a.replace(""," ").split()
-print(b)
-
-if "f" in b:
-    print("hello")
-
-
-
-
-
-
+n =10
+for i in range(10):
+    print(i)
