@@ -1,4 +1,3 @@
-
 n,m = tuple(map(int,input().split()))
 list =[]
 
@@ -19,4 +18,7 @@ def search_combi(count):
 
 search_combi(0)
 
-
+#
+# 1
+# 1 1
+# 1 1 1 1

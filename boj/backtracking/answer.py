@@ -7,14 +7,13 @@ def backtracking_14889():
     for _ in range(n):
         table.append(list(map(int, input().split())))
 
-    people = [i for i in range(n)]  # 사람 목록
+    people = [i for i in range(n)]  # 사람 목록  1,2,3,46
     stats = []  # 능력치의 차를 저장하는 리스트
 
     # 팀을 나누는 과정
     tmp_team = list(itertools.combinations(range(n), n // 2))
-    print(tmp_team)
-    for team in tmp_team:
 
+    for team in tmp_team:
         start = team
         link = [p for p in people if p not in start]
 
@@ -22,7 +21,6 @@ def backtracking_14889():
         hap_link = 0  # 링크의 합
         for i in start:
             for j in start:
-                print(i,j)
                 hap_start += table[i][j]
 
         for i in link:

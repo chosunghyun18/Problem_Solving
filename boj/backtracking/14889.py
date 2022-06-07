@@ -7,7 +7,7 @@ m = int(n/2)
 listans =[]
 comb = []
 array = [list(map(int, sys.stdin.readline().split())) for i in range(n)]
-print(array)
+
 def search_combi(count):
     if count == m :
         comb.append(listans[:])
@@ -36,8 +36,6 @@ def split_list(a_list):
 
 left, right = split_list(comb)
 right.reverse()
-print(left)
-print(right)
 
 min = 10000000000
 for arr in range(len(right)):
