@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd46329e-fba8-483b-ad45-5ae02ae49d5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tmp1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tmp1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tmp2.py" afterDir="false" />
-    </list>
+    <list default="true" id="dd46329e-fba8-483b-ad45-5ae02ae49d5c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +123,7 @@
       <workItem from="1669169311779" duration="1804000" />
       <workItem from="1669277672284" duration="999000" />
       <workItem from="1669280886582" duration="910000" />
+      <workItem from="1678847851319" duration="342000" />
     </task>
     <servers />
   </component>
