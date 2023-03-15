@@ -20,37 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/11399.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/1475.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grammer/ListHandle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grammer/inputHandle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolved2021Summer/Basic/input_style.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/Basic/input_style.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/DFS_BFS/1012.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/DFS_BFS/1012.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/DFS_BFS/1987.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/DFS_BFS/1987.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/DFS_BFS/2644.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/DFS_BFS/2644.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/14889.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/14889.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/15649.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/15649.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/9663.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/9663.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/allcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/allcase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/answer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/calculatecombinearray.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/calculatecombinearray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/backtracking/combination.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/combination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/dp/11053.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/dp/11053.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/dp/2225.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/dp/2225.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/greedy/11047.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/11047.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/greedy/1715solv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/1715solv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/greedy/1931solv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/1931solv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/greedy/2389solv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/2389solv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/simulation/200057.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/simulation/200057.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/simulation/20055.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/simulation/20055.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/simulation/leftturn.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/simulation/leftturn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/sort/2309.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/2309.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/sort/23881.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/23881.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/sort/23968.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/23968.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/sort/24051.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/24051.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj/sort/2750.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/2750.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list/listbothwaylist.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/listbothwaylist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list/listcomprehension.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/listcomprehension.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list/onewaylist.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/onewaylist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list/palindromecheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/palindromecheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammer/how2copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammer/how2copy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +62,7 @@
       <recent name="$PROJECT_DIR$/practice" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.how2copy">
     <configuration name="11399" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +85,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="how2copy" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Problem_Solving" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/summer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grammer" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grammer/how2copy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.how2copy" />
+      <item itemvalue="Python.11399" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.11399" />
@@ -125,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678848215614</updated>
-      <workItem from="1678848216802" duration="2930000" />
+      <workItem from="1678848216802" duration="4345000" />
     </task>
     <servers />
   </component>
@@ -144,32 +144,36 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1678850594549">
+    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1678853285595">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1678850594549" />
-    <state width="854" height="296" key="GridCell.Tab.0.bottom" timestamp="1678851341518">
+    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1678853285595" />
+    <state x="1064" y="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1678852949540">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="854" height="296" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341518" />
-    <state width="854" height="296" key="GridCell.Tab.0.center" timestamp="1678851341517">
+    <state x="1064" y="369" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1095@0.25.1792.1095" timestamp="1678852949540" />
+    <state width="854" height="296" key="GridCell.Tab.0.bottom" timestamp="1678853234142">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="854" height="296" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341517" />
-    <state width="854" height="296" key="GridCell.Tab.0.left" timestamp="1678851341516">
+    <state width="854" height="296" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1678853234142" />
+    <state width="854" height="296" key="GridCell.Tab.0.center" timestamp="1678853234141">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="854" height="296" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341516" />
-    <state width="854" height="296" key="GridCell.Tab.0.right" timestamp="1678851341517">
+    <state width="854" height="296" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1678853234141" />
+    <state width="854" height="296" key="GridCell.Tab.0.left" timestamp="1678853234141">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="854" height="296" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341517" />
+    <state width="854" height="296" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1678853234141" />
+    <state width="854" height="296" key="GridCell.Tab.0.right" timestamp="1678853234141">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="854" height="296" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678853234141" />
     <state x="896" y="25" width="896" height="1095" key="dock-window-1" timestamp="1678850726137">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="896" y="25" width="896" height="1095" key="dock-window-1/0.25.1792.1095@0.25.1792.1095" timestamp="1678850726137" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Problem_Solving$11399.coverage" NAME="11399 Coverage Results" MODIFIED="1678851341509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
+    <SUITE FILE_PATH="coverage/Problem_Solving$11399.coverage" NAME="11399 Coverage Results" MODIFIED="1678853234133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
   </component>
 </project>
