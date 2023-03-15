@@ -12,7 +12,7 @@ A =  [int(x) for  x in input().split()]
 
 given = [
     tuple(map(int, input().split()))
-    for _ in range(n)
+    for _ in range(k)
 ]
 
 

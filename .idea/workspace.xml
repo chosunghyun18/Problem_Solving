@@ -1,6 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/11399.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2021Summer/Basic/input_style.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/Basic/input_style.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/DFS_BFS/1012.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/DFS_BFS/1012.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/DFS_BFS/1987.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/DFS_BFS/1987.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/DFS_BFS/2644.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/DFS_BFS/2644.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/14889.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/14889.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/15649.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/15649.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/9663.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/9663.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/allcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/allcase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/answer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/calculatecombinearray.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/calculatecombinearray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/backtracking/combination.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/backtracking/combination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/dp/11053.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/dp/11053.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/dp/2225.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/dp/2225.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/greedy/11047.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/11047.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/greedy/1715solv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/1715solv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/greedy/1931solv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/1931solv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/greedy/2389solv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/greedy/2389solv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/simulation/200057.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/simulation/200057.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/simulation/20055.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/simulation/20055.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/simulation/leftturn.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/simulation/leftturn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/sort/2309.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/2309.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/sort/23881.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/23881.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/sort/23968.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/23968.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/sort/24051.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/24051.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/sort/2750.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2022/boj/sort/2750.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/listbothwaylist.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/listbothwaylist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/listcomprehension.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/listcomprehension.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/onewaylist.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/onewaylist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/palindromecheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2021Summer/list/palindromecheck.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="957e4957-fe89-471a-ad34-09570cd63770" />
+  <component name="ProjectId" id="2N23BfMSgxoyo6l56WYYJaUlDQ0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ProblemSolved2021Summer" />
+      <recent name="$PROJECT_DIR$/ProblemSolved2022" />
+      <recent name="$PROJECT_DIR$/DataStructure/Graph" />
+      <recent name="$PROJECT_DIR$/practice" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="11399" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Problem_Solving" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/summer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/11399.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.11399" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="" />
+      <created>1678848215614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678848215614</updated>
+      <workItem from="1678848216802" duration="2930000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1678850594549">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1678850594549" />
+    <state width="854" height="296" key="GridCell.Tab.0.bottom" timestamp="1678851341518">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="854" height="296" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341518" />
+    <state width="854" height="296" key="GridCell.Tab.0.center" timestamp="1678851341517">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="854" height="296" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341517" />
+    <state width="854" height="296" key="GridCell.Tab.0.left" timestamp="1678851341516">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="854" height="296" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341516" />
+    <state width="854" height="296" key="GridCell.Tab.0.right" timestamp="1678851341517">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="854" height="296" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678851341517" />
+    <state x="896" y="25" width="896" height="1095" key="dock-window-1" timestamp="1678850726137">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="896" y="25" width="896" height="1095" key="dock-window-1/0.25.1792.1095@0.25.1792.1095" timestamp="1678850726137" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Problem_Solving$11399.coverage" NAME="11399 Coverage Results" MODIFIED="1678851341509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
   </component>
 </project>
