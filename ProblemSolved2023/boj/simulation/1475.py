@@ -13,12 +13,26 @@ input : 첫째 줄에 다솜이의 방 번호 N이 주어진다. N은 1,000,000�
 
 # count
 
-originSet = ["0","1","2","3","4","5","7","8","6","6","9","9"]
+originSet = ["0","1","2","3","4","5","7","8","6","6"]
 
-roomNumber = input().split()
+checkSet = originSet[:]
 
-setNumber = 0
+roomNumber = input().replace('9', '6')
+roomNumber = [num for num in roomNumber]
 
-for oneDigit in roomNumber:
-    # check one digit is in set if not count +1 in setnumber + init else , erase set
+numberOfSet = 1
+
+print(roomNumber)
+if len(set(roomNumber)) == 1: # Check if all digits are the same
+    print(numberOfSet)
+else:
+    for oneDigit in roomNumber:
+        # check one digit is in set if not count +1 in setnumber + init else , erase set
+        if oneDigit in checkSet:
+            checkSet.remove(oneDigit)
+        else:
+            numberOfSet +=1
+            checkSet = originSet[:]
+            checkSet.remove(oneDigit)
+    print(numberOfSet)
 
