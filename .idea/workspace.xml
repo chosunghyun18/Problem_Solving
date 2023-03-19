@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/AdventureGuild.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/1475.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/1475.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammer/ListHandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammer/ListHandle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678848215614</updated>
       <workItem from="1678848216802" duration="8228000" />
-      <workItem from="1678885434143" duration="292000" />
+      <workItem from="1678885434143" duration="335000" />
+      <workItem from="1679209541300" duration="1772000" />
     </task>
     <servers />
   </component>
@@ -208,10 +208,14 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="364" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992670" />
-    <state x="896" y="25" width="896" height="1095" key="dock-window-1" timestamp="1678885897137">
+    <state x="896" y="25" width="896" height="1095" key="dock-window-1" timestamp="1679209872024">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="896" y="25" width="896" height="1095" key="dock-window-1/0.25.1792.1095@0.25.1792.1095" timestamp="1678885897137" />
+    <state x="896" y="25" width="896" height="1095" key="dock-window-1/0.25.1792.1095@0.25.1792.1095" timestamp="1679209872024" />
+    <state x="113" y="269" width="670" height="676" key="search.everywhere.popup" timestamp="1679210642513">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="113" y="269" width="670" height="676" key="search.everywhere.popup/0.25.1792.1095@0.25.1792.1095" timestamp="1679210642513" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Problem_Solving$1475.coverage" NAME="1475 Coverage Results" MODIFIED="1678856032262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
