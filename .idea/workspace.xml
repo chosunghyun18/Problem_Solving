@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/AdventureGuild.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/AdventureGuild.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/AdventureGuild.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <recent name="$PROJECT_DIR$/practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.1475">
+  <component name="RunManager" selected="Python.AdventureGuild">
     <configuration name="11399" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,6 +104,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="AdventureGuild" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Problem_Solving" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/summer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/AdventureGuild.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="how2copy" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,9 +152,11 @@
       <item itemvalue="Python.how2copy" />
       <item itemvalue="Python.11399" />
       <item itemvalue="Python.1475" />
+      <item itemvalue="Python.AdventureGuild" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AdventureGuild" />
         <item itemvalue="Python.1475" />
         <item itemvalue="Python.11399" />
       </list>
@@ -148,7 +172,7 @@
       <updated>1678848215614</updated>
       <workItem from="1678848216802" duration="8228000" />
       <workItem from="1678885434143" duration="335000" />
-      <workItem from="1679209541300" duration="1772000" />
+      <workItem from="1679209541300" duration="3701000" />
     </task>
     <servers />
   </component>
@@ -168,9 +192,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1678853661898">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state x="-2049" y="290" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1679231919368">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
+    <state x="-2049" y="290" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679231919368" />
     <state x="358" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1678853661898" />
     <state x="1064" y="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1678852949540">
       <screen x="0" y="25" width="1792" height="1095" />

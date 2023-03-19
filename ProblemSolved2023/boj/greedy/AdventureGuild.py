@@ -3,18 +3,22 @@
 """
 
 member = int(input())
+total = member
 status = list(map(int,input().split()))
 status.sort()
-group,check,i = 0
-total = len(status)
+group,check,i = 0 , 0, 0
+
 if member == 1 :
     print(1)
 
 else :
     while(check == 0):
-        if(status[i] > status[i] -(i+1)) :
+        if(status[i] > total -(i+1)) :
             print(group)
-            break
+            check = 1
         else :
+            group += 1
             i += status[i]
-            group+=1
+            if(i > total -1) :
+                print(group)
+                check += 1
