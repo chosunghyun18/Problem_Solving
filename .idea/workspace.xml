@@ -172,7 +172,8 @@
       <updated>1678848215614</updated>
       <workItem from="1678848216802" duration="8228000" />
       <workItem from="1678885434143" duration="335000" />
-      <workItem from="1679209541300" duration="3701000" />
+      <workItem from="1679209541300" duration="6711000" />
+      <workItem from="1679300061241" duration="173000" />
     </task>
     <servers />
   </component>
@@ -201,21 +202,25 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="1064" y="369" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1095@0.25.1792.1095" timestamp="1678852949540" />
-    <state width="1750" height="364" key="GridCell.Tab.0.bottom" timestamp="1678862992669">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state width="458" height="624" key="GridCell.Tab.0.bottom" timestamp="1679238088578">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
+    <state width="458" height="624" key="GridCell.Tab.0.bottom/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088578" />
     <state width="1750" height="364" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992669" />
-    <state width="1750" height="364" key="GridCell.Tab.0.center" timestamp="1678862992668">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state width="458" height="624" key="GridCell.Tab.0.center" timestamp="1679238088577">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
+    <state width="458" height="624" key="GridCell.Tab.0.center/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
     <state width="1750" height="364" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992668" />
-    <state width="1750" height="364" key="GridCell.Tab.0.left" timestamp="1678862992667">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state width="458" height="624" key="GridCell.Tab.0.left" timestamp="1679238088577">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
+    <state width="458" height="624" key="GridCell.Tab.0.left/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
     <state width="1750" height="364" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992667" />
-    <state width="1750" height="364" key="GridCell.Tab.0.right" timestamp="1678862992669">
-      <screen x="0" y="25" width="1792" height="1095" />
+    <state width="458" height="624" key="GridCell.Tab.0.right" timestamp="1679238088577">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
+    <state width="458" height="624" key="GridCell.Tab.0.right/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
     <state width="1750" height="364" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992669" />
     <state width="1750" height="364" key="GridCell.Tab.1.bottom" timestamp="1678862992670">
       <screen x="0" y="25" width="1792" height="1095" />
@@ -244,6 +249,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Problem_Solving$1475.coverage" NAME="1475 Coverage Results" MODIFIED="1678856032262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
+    <SUITE FILE_PATH="coverage/Problem_Solving$AdventureGuild.coverage" NAME="AdventureGuild Coverage Results" MODIFIED="1679231971630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$11399.coverage" NAME="11399 Coverage Results" MODIFIED="1678853234133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$how2copy.coverage" NAME="how2copy Coverage Results" MODIFIED="1678853634440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grammer" />
   </component>

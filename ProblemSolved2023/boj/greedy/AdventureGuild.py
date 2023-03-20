@@ -22,3 +22,20 @@ else :
             if(i > total -1) :
                 print(group)
                 check += 1
+
+
+"""
+n = int(input())
+data = list(map(int,input().split()))
+result = 0
+
+count = 0
+
+for i in data:
+    count += 1
+    if count >= i : # 현그룹에 포함된 모험가의 수가 현 공포도 이상이면, 그룹 결성 
+        result +=1
+        count =0
+
+                                                                                                                                                
+"""
