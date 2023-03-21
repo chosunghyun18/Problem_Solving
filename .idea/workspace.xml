@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/MultipleOrAdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/MultipleOrAdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringCompress.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringCompress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammer/ListHandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammer/ListHandle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammer/inputHandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammer/inputHandle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation/LockerAndKey.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/AdventureGuild.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/AdventureGuild.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/CanNotMake.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/CanNotMake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/FlipString.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/FlipString.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/MujiMuckBangLive.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/MujiMuckBangLive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/MultipleOrAdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/MultipleOrAdd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/PickBolling.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/PickBolling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/LuckStraight.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation/LuckStraight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringCompress.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation/StringCompress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringResort.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation/StringResort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation" />
+      <recent name="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy" />
+      <recent name="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ProblemSolved2021Summer" />
-      <recent name="$PROJECT_DIR$/ProblemSolved2022" />
-      <recent name="$PROJECT_DIR$/DataStructure/Graph" />
-      <recent name="$PROJECT_DIR$/practice" />
     </key>
   </component>
   <component name="RunManager" selected="Python.ListHandle">
@@ -75,7 +82,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/CanNotMake.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/CanNotMake.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,7 +126,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/LuckStraight.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation/LuckStraight.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +148,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/PickBolling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/greedy/PickBolling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,7 +170,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringResort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation/StringResort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,7 +230,8 @@
       <workItem from="1678848216802" duration="8228000" />
       <workItem from="1678885434143" duration="335000" />
       <workItem from="1679209541300" duration="6711000" />
-      <workItem from="1679300061241" duration="19812000" />
+      <workItem from="1679300061241" duration="20772000" />
+      <workItem from="1679387574579" duration="3708000" />
     </task>
     <servers />
   </component>
@@ -257,50 +265,50 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="684" y="330" key="FileChooserDialogImpl/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679301797582" />
-    <state width="296" height="722" key="GridCell.Tab.0.bottom" timestamp="1679381516946">
+    <state width="472" height="722" key="GridCell.Tab.0.bottom" timestamp="1679387570512">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.bottom/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.bottom/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088578" />
-    <state width="296" height="722" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1679381516946" />
-    <state width="296" height="722" key="GridCell.Tab.0.center" timestamp="1679381516945">
+    <state width="472" height="722" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570512" />
+    <state width="472" height="722" key="GridCell.Tab.0.center" timestamp="1679387570512">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.center/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.center/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
-    <state width="296" height="722" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1679381516945" />
-    <state width="296" height="722" key="GridCell.Tab.0.left" timestamp="1679381516945">
+    <state width="472" height="722" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570512" />
+    <state width="472" height="722" key="GridCell.Tab.0.left" timestamp="1679387570512">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.left/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888489" />
     <state width="458" height="624" key="GridCell.Tab.0.left/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
-    <state width="296" height="722" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1679381516945" />
-    <state width="296" height="722" key="GridCell.Tab.0.right" timestamp="1679381516946">
+    <state width="472" height="722" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570512" />
+    <state width="472" height="722" key="GridCell.Tab.0.right" timestamp="1679387570512">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.right/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
-    <state width="296" height="722" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1679381516946" />
-    <state width="1750" height="364" key="GridCell.Tab.1.bottom" timestamp="1679307537047">
+    <state width="472" height="722" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570512" />
+    <state width="1750" height="364" key="GridCell.Tab.1.bottom" timestamp="1679387570509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="364" key="GridCell.Tab.1.bottom/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679307537047" />
-    <state width="1750" height="364" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992670" />
-    <state width="1750" height="364" key="GridCell.Tab.1.center" timestamp="1679307537046">
+    <state width="1750" height="364" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570509" />
+    <state width="1750" height="364" key="GridCell.Tab.1.center" timestamp="1679387570509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="364" key="GridCell.Tab.1.center/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679307537046" />
-    <state width="1750" height="364" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992670" />
-    <state width="1750" height="364" key="GridCell.Tab.1.left" timestamp="1679307537046">
+    <state width="1750" height="364" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570509" />
+    <state width="1750" height="364" key="GridCell.Tab.1.left" timestamp="1679387570509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="364" key="GridCell.Tab.1.left/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679307537046" />
-    <state width="1750" height="364" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992670" />
-    <state width="1750" height="364" key="GridCell.Tab.1.right" timestamp="1679307537047">
+    <state width="1750" height="364" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570509" />
+    <state width="1750" height="364" key="GridCell.Tab.1.right" timestamp="1679387570509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="364" key="GridCell.Tab.1.right/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679307537047" />
-    <state width="1750" height="364" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992670" />
+    <state width="1750" height="364" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1679387570509" />
     <state x="405" y="208" key="SettingsEditor" timestamp="1679302029798">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
