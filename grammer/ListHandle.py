@@ -14,7 +14,7 @@ print(x)
 """
 [1, 3, 5, 7, 9]
 """
-
+print(sum(x))
 
 
 my_string="Delft, Stack, Netherlands"
