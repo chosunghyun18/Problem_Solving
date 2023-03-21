@@ -58,15 +58,18 @@
 
 
 # #도시 , 도로 , 거리 정보, 출발 도시
-from collections import  deque
-n,m,k,x = map(int,input().split())
+from collections import deque
+import sys
+
+f = sys.stdin.readline
+n,m,k,x = map(int,f().split())
 
 # graph
 graph = [[] for _ in range(n+1)]
 
 # get all road info ,
 for _ in range(m) :
-    a,b = map(int,input().split())
+    a,b = map(int,f().split())
     graph[a].append(b)
 
 
@@ -85,6 +88,7 @@ while q:
             q.append(next_node)
 
 # 최단 거리가 k 인 모든 도시의 번호를 오름 차순으로 출력
+check = False
 for i in range(1,n+1):
     if distance[i] == k:
         print(i)
