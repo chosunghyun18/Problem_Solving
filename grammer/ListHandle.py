@@ -1,4 +1,10 @@
 
+M ,N = 4 , 3
+
+array = [[0] * M for _ in range(N)]
+print(array)
+
+
 
 
 
@@ -24,3 +30,20 @@ Delft Stack Netherlands
 data =dict()
 data['apple'] = "this is apple "
 print(data)
+
+
+testlist = []
+testlist.append(1)
+testlist.append(2)
+
+print("this is min nujmber of list",min(testlist))
+
+
+testlist.remove(1)
+print(testlist)
+print(testlist.count(2))
+
+
+
+
+
