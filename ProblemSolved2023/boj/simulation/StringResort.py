@@ -1,11 +1,22 @@
-# data = "K1KA5CB7"
-# # data = input().replace(""," ").split()
-#
-# data = data.replace(""," ").split()
-# data.sort()
-# print(data)
+data = "K1KA5CB7"
+# data = input().replace(""," ").split()
 
-"
+data = data.replace(""," ").split()
+data.sort()
+print(data)
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 data = input()
 result = []
 value = 0
@@ -23,4 +34,4 @@ if value != 0 :
 
 print(''.join(result))
 
-
+"""

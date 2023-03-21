@@ -21,3 +21,6 @@ print("Transformed String is:")
 Delft Stack Netherlands
 """
 
+data =dict()
+data['apple'] = "this is apple "
+print(data)

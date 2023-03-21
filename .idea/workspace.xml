@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringResort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringResort.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringResort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
       <recent name="$PROJECT_DIR$/practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.LuckStraight">
+  <component name="RunManager" selected="Python.StringResort">
     <configuration name="CanNotMake" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,28 +126,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MultipleOrAdd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Problem_Solving" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/MultipleOrAdd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="PickBolling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,6 +140,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/greedy/PickBolling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StringResort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Problem_Solving" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/boj/simulation/StringResort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,19 +194,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.how2copy" />
-      <item itemvalue="Python.MultipleOrAdd" />
       <item itemvalue="Python.FlipString" />
       <item itemvalue="Python.CanNotMake" />
       <item itemvalue="Python.PickBolling" />
       <item itemvalue="Python.LuckStraight" />
+      <item itemvalue="Python.StringResort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.StringResort" />
         <item itemvalue="Python.LuckStraight" />
         <item itemvalue="Python.PickBolling" />
         <item itemvalue="Python.CanNotMake" />
         <item itemvalue="Python.FlipString" />
-        <item itemvalue="Python.MultipleOrAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +221,7 @@
       <workItem from="1678848216802" duration="8228000" />
       <workItem from="1678885434143" duration="335000" />
       <workItem from="1679209541300" duration="6711000" />
-      <workItem from="1679300061241" duration="13751000" />
+      <workItem from="1679300061241" duration="15585000" />
     </task>
     <servers />
   </component>
@@ -254,28 +255,28 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="684" y="330" key="FileChooserDialogImpl/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679301797582" />
-    <state width="575" height="722" key="GridCell.Tab.0.bottom" timestamp="1679328204947">
+    <state width="575" height="722" key="GridCell.Tab.0.bottom" timestamp="1679328888490">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="575" height="722" key="GridCell.Tab.0.bottom/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328204947" />
+    <state width="575" height="722" key="GridCell.Tab.0.bottom/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.bottom/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088578" />
     <state width="1750" height="364" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992669" />
-    <state width="575" height="722" key="GridCell.Tab.0.center" timestamp="1679328204946">
+    <state width="575" height="722" key="GridCell.Tab.0.center" timestamp="1679328888490">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="575" height="722" key="GridCell.Tab.0.center/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328204946" />
+    <state width="575" height="722" key="GridCell.Tab.0.center/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.center/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
     <state width="1750" height="364" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992668" />
-    <state width="575" height="722" key="GridCell.Tab.0.left" timestamp="1679328204946">
+    <state width="575" height="722" key="GridCell.Tab.0.left" timestamp="1679328888489">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="575" height="722" key="GridCell.Tab.0.left/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328204946" />
+    <state width="575" height="722" key="GridCell.Tab.0.left/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888489" />
     <state width="458" height="624" key="GridCell.Tab.0.left/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
     <state width="1750" height="364" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992667" />
-    <state width="575" height="722" key="GridCell.Tab.0.right" timestamp="1679328204947">
+    <state width="575" height="722" key="GridCell.Tab.0.right" timestamp="1679328888490">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="575" height="722" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328204947" />
+    <state width="575" height="722" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.right/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
     <state width="1750" height="364" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1678862992669" />
     <state width="1750" height="364" key="GridCell.Tab.1.bottom" timestamp="1679307537047">
@@ -318,6 +319,7 @@
     <SUITE FILE_PATH="coverage/Problem_Solving$1475.coverage" NAME="1475 Coverage Results" MODIFIED="1678856032262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
     <SUITE FILE_PATH="coverage/Problem_Solving$FlipString.coverage" NAME="FlipString Coverage Results" MODIFIED="1679307819066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$CanNotMake.coverage" NAME="CanNotMake Coverage Results" MODIFIED="1679308823869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
+    <SUITE FILE_PATH="coverage/Problem_Solving$StringResort.coverage" NAME="StringResort Coverage Results" MODIFIED="1679328888483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
     <SUITE FILE_PATH="coverage/Problem_Solving$PickBolling.coverage" NAME="PickBolling Coverage Results" MODIFIED="1679326478117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$AdventureGuild.coverage" NAME="AdventureGuild Coverage Results" MODIFIED="1679231971630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$how2copy.coverage" NAME="how2copy Coverage Results" MODIFIED="1678853634440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grammer" />
