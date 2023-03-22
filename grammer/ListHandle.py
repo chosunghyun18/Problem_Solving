@@ -44,6 +44,25 @@ print(testlist)
 print(testlist.count(2))
 
 
+scores = []
+scores.append([1,214,13])
+scores.append([11,22,23])
+scores.append([12,23,33])
+scores.append([13,24,34])
+
+# print(array.sort())
+
+print(scores)
+array= sorted(scores,key=lambda score:score[1])
+print(array)
 
 
+a = [1,5,3,4,5]
+c = a [:]
+b = a[0:-1] # expect [1,2,3]
+print(b)
+b.sort()
 
+print(c)
+c[0:2+1] = b
+print(c)
