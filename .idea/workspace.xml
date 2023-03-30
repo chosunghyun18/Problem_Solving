@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS/DfsBfsBase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS/MakeIceJuice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS/MazeBFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DfsBfsBase">
+  <component name="RunManager" selected="Python.MakeIceJuice">
     <configuration name="Antenna24" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ListHandle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MakeIceJuice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Problem_Solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,12 +157,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grammer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grammer/ListHandle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS/MakeIceJuice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,19 +195,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.how2copy" />
-      <item itemvalue="Python.ListHandle" />
       <item itemvalue="Python.KEM23" />
       <item itemvalue="Python.Antenna24" />
       <item itemvalue="Python.CardSorting26" />
       <item itemvalue="Python.DfsBfsBase" />
+      <item itemvalue="Python.MakeIceJuice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MakeIceJuice" />
         <item itemvalue="Python.DfsBfsBase" />
         <item itemvalue="Python.CardSorting26" />
         <item itemvalue="Python.Antenna24" />
         <item itemvalue="Python.KEM23" />
-        <item itemvalue="Python.ListHandle" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +228,8 @@
       <workItem from="1679491807395" duration="379000" />
       <workItem from="1679902251351" duration="215000" />
       <workItem from="1680000140096" duration="1187000" />
-      <workItem from="1680057683087" duration="1941000" />
+      <workItem from="1680057683087" duration="3343000" />
+      <workItem from="1680148624600" duration="1879000" />
     </task>
     <servers />
   </component>
@@ -265,30 +267,30 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="684" y="330" key="FileChooserDialogImpl/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679301797582" />
-    <state width="608" height="562" key="GridCell.Tab.0.bottom" timestamp="1680063797907">
+    <state width="757" height="554" key="GridCell.Tab.0.bottom" timestamp="1680151594574">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.bottom/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.bottom/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088578" />
-    <state width="608" height="562" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1680063797907" />
-    <state width="608" height="562" key="GridCell.Tab.0.center" timestamp="1680063797906">
+    <state width="757" height="554" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1680151594574" />
+    <state width="757" height="554" key="GridCell.Tab.0.center" timestamp="1680151594573">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.center/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.center/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
-    <state width="608" height="562" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1680063797906" />
-    <state width="608" height="562" key="GridCell.Tab.0.left" timestamp="1680063797906">
+    <state width="757" height="554" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1680151594573" />
+    <state width="757" height="554" key="GridCell.Tab.0.left" timestamp="1680151594572">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.left/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888489" />
     <state width="458" height="624" key="GridCell.Tab.0.left/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
-    <state width="608" height="562" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1680063797906" />
-    <state width="608" height="562" key="GridCell.Tab.0.right" timestamp="1680063797907">
+    <state width="757" height="554" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1680151594572" />
+    <state width="757" height="554" key="GridCell.Tab.0.right" timestamp="1680151594573">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="575" height="722" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679328888490" />
     <state width="458" height="624" key="GridCell.Tab.0.right/-2560.25.2560.1415/1792.25.1180.795/0.25.1792.1095@-2560.25.2560.1415" timestamp="1679238088577" />
-    <state width="608" height="562" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1680063797907" />
+    <state width="757" height="554" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1680151594573" />
     <state width="1750" height="364" key="GridCell.Tab.1.bottom" timestamp="1679466429760">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -317,11 +319,11 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="896" y="25" width="896" height="1095" key="dock-window-1/0.25.1792.1095@0.25.1792.1095" timestamp="1679209872024" />
-    <state x="113" y="269" width="670" height="676" key="search.everywhere.popup" timestamp="1679305902509">
+    <state x="113" y="269" width="670" height="676" key="search.everywhere.popup" timestamp="1680151252690">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="113" y="269" width="670" height="676" key="search.everywhere.popup/-1920.25.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1679305902509" />
-    <state x="113" y="269" width="670" height="676" key="search.everywhere.popup/0.25.1792.1095@0.25.1792.1095" timestamp="1679210642513" />
+    <state x="113" y="269" width="670" height="676" key="search.everywhere.popup/0.25.1792.1095@0.25.1792.1095" timestamp="1680151252690" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Problem_Solving$LuckStraight.coverage" NAME="LuckStraight Coverage Results" MODIFIED="1679399188912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
@@ -330,7 +332,7 @@
     <SUITE FILE_PATH="coverage/Problem_Solving$StringResort.coverage" NAME="StringResort Coverage Results" MODIFIED="1679328888483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/simulation" />
     <SUITE FILE_PATH="coverage/Problem_Solving$PickBolling.coverage" NAME="PickBolling Coverage Results" MODIFIED="1679326478117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$KEM23.coverage" NAME="KEM23 Coverage Results" MODIFIED="1679456414458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS" />
-    <SUITE FILE_PATH="coverage/Problem_Solving$Recursive.coverage" NAME="DfsBfsBase Coverage Results" MODIFIED="1680063797899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS" />
+    <SUITE FILE_PATH="coverage/Problem_Solving$Recursive.coverage" NAME="DfsBfsBase Coverage Results" MODIFIED="1680065279033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Problem_Solving$CardSorting26.coverage" NAME="CardSorting26 Coverage Results" MODIFIED="1679466304324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/sort" />
     <SUITE FILE_PATH="coverage/Problem_Solving$AdventureGuild.coverage" NAME="AdventureGuild Coverage Results" MODIFIED="1679231971630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$inputHandle.coverage" NAME="inputHandle Coverage Results" MODIFIED="1679401188090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grammer" />
@@ -338,6 +340,7 @@
     <SUITE FILE_PATH="coverage/Problem_Solving$FlipString.coverage" NAME="FlipString Coverage Results" MODIFIED="1679307819066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$CanNotMake.coverage" NAME="CanNotMake Coverage Results" MODIFIED="1679308823869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
     <SUITE FILE_PATH="coverage/Problem_Solving$ChickenHous13.coverage" NAME="ChickenHous13 Coverage Results" MODIFIED="1679401821721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/simulation" />
+    <SUITE FILE_PATH="coverage/Problem_Solving$MakeIceJuice.coverage" NAME="MakeIceJuice Coverage Results" MODIFIED="1680151594564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Problem_Solving$Antenna24.coverage" NAME="Antenna24 Coverage Results" MODIFIED="1679463299698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/sort" />
     <SUITE FILE_PATH="coverage/Problem_Solving$how2copy.coverage" NAME="how2copy Coverage Results" MODIFIED="1678853634440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grammer" />
     <SUITE FILE_PATH="coverage/Problem_Solving$11399.coverage" NAME="11399 Coverage Results" MODIFIED="1679301960234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemSolved2023/boj/greedy" />
