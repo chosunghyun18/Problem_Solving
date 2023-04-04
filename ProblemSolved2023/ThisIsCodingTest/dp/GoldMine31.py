@@ -16,16 +16,24 @@ for t in range(int(input())) :
         index += m
 
     print(dp)
-    #find startting poiint in max value
-    value = 0
-    startPoint = 0
+    #  Clcluate dp table
     for i in range(n):
-        if(dp[i][0] >value) :
-            value = dp[i][0]
-            startPoint = i
-    print(startPoint,value) # init starting  pioint in value and index
-
-    output = [] # get total value in output  # greedy case in choose the best
+        for j in range(1,m):
+            current=dp[i][j]
+            # make  2 case two edge and  middle
+            if i == 0  :
+                dp[i][j] = max(current + dp[0][j - 1], current + dp[0][j + 1], current + dp[0][j])
+            elif i == n :
+                dp[i][j] = max(current + dp[n][m - 1], current + dp[n][j + 1], current + dp[n][j])
+            #bottom line
+            else:
+                dp[i][j] = max(current + dp[i - 1][j - 1], current + dp[i - 1][j + 1], current + dp[i - 1][j])
+    for i in range(n) :
+        value = 0
+        if value < dp[i][m] :
+            value = dp[i][m]
+    # result
+    print(value)
 
 
 
