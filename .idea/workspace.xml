@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a78d6c-3fcc-4337-97fd-490c68cb03a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/search/Router29.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/search/Router29.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolved2023/ThisIsCodingTest/dp/GoldMine31.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +229,7 @@
       <workItem from="1680057683087" duration="3343000" />
       <workItem from="1680148624600" duration="2412000" />
       <workItem from="1680332442710" duration="52000" />
-      <workItem from="1680410377004" duration="6540000" />
+      <workItem from="1680410377004" duration="6928000" />
     </task>
     <servers />
   </component>
