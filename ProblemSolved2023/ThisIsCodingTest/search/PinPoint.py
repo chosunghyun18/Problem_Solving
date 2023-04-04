@@ -35,7 +35,8 @@ def search(arr,start,end):
         return mid
     elif arr[mid] > mid:
         return search(arr,start,mid-1)
-    else:return search(arr,start,mid+1)
+    else:
+        return search(arr,mid+1,end)
 
 
 
