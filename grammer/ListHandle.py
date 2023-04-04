@@ -66,3 +66,16 @@ b.sort()
 print(c)
 c[0:2+1] = b
 print(c)
+
+
+
+
+
+
+
+
+
+
+
+
+
