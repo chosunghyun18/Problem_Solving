@@ -33,8 +33,8 @@ Define function dijkstra
 
 def f(start):
     q = []
-    heapq.heappush(q,(0,start))
-    print(heapq)
+    heapq.heappush(q,(0,start))  # [(0, 1)]
+    print(q)
     while q :
         dist , now = heapq.heappop(q)
         print(dist,now)
@@ -43,11 +43,11 @@ def f(start):
             continue
         # check near node in current node
         for i in arr[now] :
-             cost = dist+ i[1]
-        # 현제 노드를 거쳐서 , 다른 노드로 이동하는 거리가 더 짧은 경우
-        if  cost < d[i[0]] :
-            d[i[0]] = cost
-            heapq.heappush(q,(cost,i[0]))
+            cost = dist+ i[1]
+            # 현제 노드를 거쳐서 , 다른 노드로 이동하는 거리가 더 짧은 경우
+            if  cost < d[i[0]] :
+                d[i[0]] = cost
+                heapq.heappush(q,(cost,i[0]))
 
 
 
