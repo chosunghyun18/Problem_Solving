@@ -22,7 +22,7 @@ d[start] = 0  # init starting point
 
 #get edge
 for _ in range(m) :
-    a,b,c = map(int,input().sploit())
+    a,b,c = map(int,input().split())
     arr[a].append((b,c))
 
 
@@ -73,7 +73,25 @@ for i in range(n+1) :
 
 
 
+"""
+Test case
 
+6 11
+1
+1 2 2
+1 3 5
+1 4 1
+2 3 3
+2 4 2
+3 2 3
+3 6 5
+4 3 3
+4 5 1
+5 3 1
+5 6 2
+
+
+"""
 
 
 
