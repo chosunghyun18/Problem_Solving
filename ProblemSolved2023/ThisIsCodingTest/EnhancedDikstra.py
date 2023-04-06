@@ -34,10 +34,10 @@ Define function dijkstra
 def f(start):
     q = []
     heapq.heappush(q,(0,start))  # [(0, 1)]
-    print(q)
+    print("heapq:",q)
     while q :
         dist , now = heapq.heappop(q)
-        print(dist,now)
+        print("dist :",dist,"now : ",now)
         # if current node is already vosited just skip
         if d[now] < dist :
             continue
@@ -48,6 +48,7 @@ def f(start):
             if  cost < d[i[0]] :
                 d[i[0]] = cost
                 heapq.heappush(q,(cost,i[0]))
+                print("heapq:", q)
 
 
 
@@ -64,8 +65,8 @@ call result
 
 
 f(start)
-
-for i in range(n+1) :
+print("--Output :--")
+for i in range(1,n+1) :
     if d[i] == INF  :
         print("can't go")
     else:
