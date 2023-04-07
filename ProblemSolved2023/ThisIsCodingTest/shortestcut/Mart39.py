@@ -8,14 +8,15 @@ input = sys.stdin.readline
 INF = int(1e9)
 
 
-x = [1,-1,0,0]
-y = [0,0,1,-1]
+dx = [1,-1,0,0]
+dy = [0,0,1,-1]
 
 
 def sol():
     n = int(input())
     # Make list
-    result_grapth = [[INF]*n]*n
+    # distance = [[INF]*n]*n  : 한줄 바뀌면 다바뀜
+    distance = [[INF]*n for _ in range(n)]
     given_graph = []
     for i in range(n) :
         given_graph.append(list(map(int,input().split())))
@@ -23,22 +24,23 @@ def sol():
     q = []
     start = (0,0)
     start_c = given_graph[0][0]
-    result_grapth[0][0] = start_c
+    distance[0][0] = start_c
     heapq.heappush(q, (start_c,start))
     while q:
-        cost , node =heapq.heappop()
-        if result_grapth[node[0]][node[1]] < cost:
+        dist , node =heapq.heappop(q)
+
+        if distance[node[0]][node[1]] < dist:
             continue
         for i in range(4):
-            nx = node[0] + x[i]
-            ny = node[1] + y[i]
-            if nx < 0 or ny < 0  or nx > n-1 or ny > n-1 :
+            nx = node[0] + dx[i]
+            ny = node[1] + dy[i]
+            if nx < 0 or ny < 0  or nx >= n or ny >= n :
                 continue
-            dist = cost +  result_grapth[nx][ny]
-            if  dist < result_grapth[nx][ny]:
-                result_grapth[nx][ny] = dist
-                heapq.heappush(q,(dist,(nx,ny)))
-
+            cost = dist + given_graph[nx][ny]
+            if  cost < distance[nx][ny]:
+                distance[nx][ny] = cost
+                heapq.heappush(q,(cost,(nx,ny)))
+    print(distance[n-1][n-1])
 
 
 
