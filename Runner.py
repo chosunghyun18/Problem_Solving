@@ -1,17 +1,11 @@
-import ProblemSolved2023.boj.bfs.WarmUP as call
+import ProblemSolved2023.boj.bfs.cabage1012 as call
 
 data = """
-5 6
-.#....
-..#...
-..#..#
-...##.
-.#....
 
 """
 
 def runner(data) :
-        test_list = data.split()
+        test_list = data
         print(test_list)
         call.solution(data)
 
