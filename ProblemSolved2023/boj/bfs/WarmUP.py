@@ -63,11 +63,23 @@ def bfs(graph,start,visited):
                 if x < 0 or y < 0 or x > n or y> n :
                     continue
                 if graph[x][y] == '#' and visited[x][y] == 0:
+                    visited[x][y] = 1
                     q.append((x,y))
     return count
-print(bfs(graph,start,visited))
 
-print(graph)
+
 
 def solution(data):
-    print(bfs(graph, start, visited))
+    ans = 0
+    for i in range(n):
+        for j in range(m):
+            if graph[i][j] == '#' :
+                ans += bfs(graph, start, visited)
+
+
+
+
+
+
+
+
