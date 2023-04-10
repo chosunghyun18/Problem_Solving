@@ -74,6 +74,7 @@ print("----dfs-------------")
 visited = [False]*9
 dfs(graph,1,visited)
 
+
 print("This is bfs using deque ")
 from collections import deque
 
@@ -94,4 +95,6 @@ bfs(graph,1,visited)
 
 
 
+
+#question :  how to devide  ?
 
