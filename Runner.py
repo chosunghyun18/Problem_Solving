@@ -1,11 +1,13 @@
 import ProblemSolved2023.boj.simulation.tile1388 as call
 
 data = """
-4 4
-----
-----
-----
-----
+6 9
+-||--||--
+--||--||-
+|--||--||
+||--||--|
+-||--||--
+--||--||-
 """
 
 def runner(data) :
