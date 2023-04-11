@@ -4,7 +4,7 @@ import sys
 
 input  = sys.stdin.readline
 
-def bfs(graph,n,m,i,j) :
+def dfs(graph,n,m,i,j) :
     if graph[i][j] == "-" :
         while j < m :
             if graph[i][j] == "|" or graph[i][j] == "." :
@@ -37,7 +37,7 @@ def solution(data) :
         for j in range(m):
             if graph[i][j] != '.' :
                 ans+=1
-                graph = bfs(graph,n,m,i,j)
+                graph = dfs(graph,n,m,i,j)
 
 
     print(ans)
