@@ -4,13 +4,13 @@ import sys
 input = sys.stdin.readline
 n = input().rstrip()
 
-ans = n
+
 check = "-1"
 count = 0
 
 if int(n) < 10 :
     n = "0"+ n
-
+ans = n
 while ans != check :
     count +=1
     if ans == "0":
