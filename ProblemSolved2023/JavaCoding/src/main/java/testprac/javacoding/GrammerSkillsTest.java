@@ -1,7 +1,7 @@
 package testprac.javacoding;
-import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 import java.util.*;
+import java.io.*;
 
 public class GrammerSkillsTest {
 
@@ -68,15 +68,18 @@ public class GrammerSkillsTest {
 
     @Test
     public void priority_queue() {
-        PriorityQueue<Integer> priorityQueueLower = new PriorityQueue<>();
-        PriorityQueue<Integer> priorityQueueUpper = new PriorityQueue<>(Collections.reverseOrder());
+        PriorityQueue<Integer> pql = new PriorityQueue<>();
+        //PriorityQueue<Integer> priorityQueueUpper = new PriorityQueue<>(Collections.reverseOrder());
 
-        priorityQueueLower.add(10);
-        priorityQueueLower.add(20);
-        priorityQueueLower.add(15);
-        priorityQueueLower.add(15);
-        priorityQueueLower.add(40);
 
+        pql.offer(20);
+        pql.offer(15);
+        pql.offer(10); // if capa is small return false
+        pql.add(15);
+        pql.add(40);
+        System.out.println(pql.peek()); // get
+        System.out.println(pql.poll()); // get and delete
+        System.out.println(pql.peek());
 
     }
 
@@ -96,7 +99,7 @@ public class GrammerSkillsTest {
         int src = 0;
         int n = graph.size();
         int[] dist = new int[n];
-        Arrays.fill(dist, Integer.MAX_VALUE);
+        Arrays.fill(dist, Integer.MAX_VALUE); // fill data
         dist[src] = 0;
 
         PriorityQueue<Node> pq = new PriorityQueue<>(n, Comparator.comparingInt(node -> node.cost));
