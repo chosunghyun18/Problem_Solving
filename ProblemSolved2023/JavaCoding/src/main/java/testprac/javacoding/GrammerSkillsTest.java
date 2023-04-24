@@ -1,13 +1,13 @@
 package testprac.javacoding;
-import java.util.ArrayList;
-import java.util.Arrays;
 import org.junit.jupiter.api.Test;
+import java.util.*;
+
 public class GrammerSkillsTest {
 
     @Test
     public void arrayListTest(){
-        ArrayList<Integer> integer1 = new ArrayList<>();
-        ArrayList<Integer> integer2 = new ArrayList<>(Arrays.asList());
+        ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3,2,1));
+        givenList.stream().forEach(System.out::println);
     }
     @Test
     public void splitTest(){
@@ -18,4 +18,36 @@ public class GrammerSkillsTest {
 
         }
     }
+    @Test
+    public void listTest(){
+        int[] items = {1,2,3,4};
+        ArrayList<Integer> checkList = new ArrayList<>();
+        for(int item : items){
+           checkList.add(item) ;
+        }
+        readList(checkList);
+
+        ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(1,2,3));
+        List arrayList = new ArrayList<>(givenList);
+        List linkedList = new LinkedList(givenList);
+
+        readList(arrayList);
+
+        System.out.println("");
+        readList(linkedList);
+    }
+    private void readList(List anyList){
+        anyList.stream().forEach(System.out::println);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
