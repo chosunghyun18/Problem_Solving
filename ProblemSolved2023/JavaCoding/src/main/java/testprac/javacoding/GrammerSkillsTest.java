@@ -1,4 +1,7 @@
 package testprac.javacoding;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 import java.io.*;
@@ -128,15 +131,27 @@ public class GrammerSkillsTest {
 
     @Test
     public void integer_class_method_Test() {
-        int number = 120 ;
+        int number = 9 ;
+        int numberSec = 30 ;
         String showBinary = Integer.toBinaryString(number);
-        String showBinaryFormated = String.format("%8s",showBinary).replace(" ","");
+
+        String showSecondBinary = Integer.toBinaryString(number|numberSec);
+        System.out.println("show Second Binary:"+showSecondBinary);
+
+        String showBinaryFormated = String.format("%8s",showBinary).replace(" ","0");
         System.out.println(showBinaryFormated);
         String showString   = Integer.toString(number);
         System.out.println(showString);
         int showInt = Integer.parseInt(showString);
         System.out.println(showInt);
+        assertEquals(showInt, number);
+        Assertions.assertThat(showInt).isEqualTo(number);
     }
+
+
+
+
+
 }
 
 
