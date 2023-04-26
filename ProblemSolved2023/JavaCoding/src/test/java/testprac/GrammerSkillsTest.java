@@ -1,4 +1,4 @@
-package testprac.javacoding;
+package testprac;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.assertj.core.api.Assertions;
