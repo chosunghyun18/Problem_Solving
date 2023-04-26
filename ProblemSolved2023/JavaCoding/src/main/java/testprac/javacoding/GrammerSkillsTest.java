@@ -127,8 +127,15 @@ public class GrammerSkillsTest {
     }
 
     @Test
-    public void StringHandleTest() {
-        //
+    public void integer_class_method_Test() {
+        int number = 120 ;
+        String showBinary = Integer.toBinaryString(number);
+        String showBinaryFormated = String.format("%8s",showBinary).replace(" ","");
+        System.out.println(showBinaryFormated);
+        String showString   = Integer.toString(number);
+        System.out.println(showString);
+        int showInt = Integer.parseInt(showString);
+        System.out.println(showInt);
     }
 }
 
