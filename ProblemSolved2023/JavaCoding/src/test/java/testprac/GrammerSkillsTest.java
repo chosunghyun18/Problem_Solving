@@ -1,6 +1,7 @@
 package testprac;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.stream.Collectors;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.*;
@@ -11,8 +12,18 @@ public class GrammerSkillsTest {
 
     @Test
     public void arrayListTest() {
+
         ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 2, 1));
-        givenList.stream().forEach(System.out::println);
+        givenList.forEach(System.out::println);
+        Collections.sort(givenList);
+        givenList.forEach(System.out::println);
+
+        int[] answer = {1,2,3,4,5};
+        Arrays.sort(answer);
+        List<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        List<Integer> answerToListInt = Arrays.stream(answer).boxed().toList();
+
+        Assertions.assertThat(arr).isEqualTo(answerToListInt);
     }
 
     @Test
@@ -29,6 +40,7 @@ public class GrammerSkillsTest {
     public void listTest() {
         int[] items = {1, 2, 3, 4};
         ArrayList<Integer> checkList = new ArrayList<>();
+
         for (int item : items) {
             checkList.add(item);
         }
@@ -42,6 +54,16 @@ public class GrammerSkillsTest {
 
         System.out.println("");
         readList(linkedList);
+
+    }
+    @Test
+    void sub_listTest(){
+        int[] answer = {1,2,3};
+        List<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        List<Integer> subList = arr.subList(2,arr.size());
+        List<Integer> answerToListInt = new ArrayList<>(Arrays.stream(answer).boxed().collect(Collectors.toList()));
+        assertArrayEquals(answer,answerToListInt.stream().mapToInt(i->i).toArray());
+
     }
 
     private void readList(List anyList) {
@@ -189,6 +211,20 @@ public class GrammerSkillsTest {
         int y = Integer.parseInt(st.nextToken());
 
     }
+    @Test
+    public void devide_test() {
+        int num = 2 ;
+        int leftE = num % 2 ;
+        num = 3 ;
+        int leftO = num % 2 ;
+
+        int expectEven = 0;
+        int expectOdd = 1;
+
+        Assertions.assertThat(leftE).isEqualTo(expectEven);
+        Assertions.assertThat(leftO).isEqualTo(expectOdd);
+    }
+
 }
 
 
