@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 import java.io.*;
 
+
 public class GrammerSkillsTest {
 
     @Test
@@ -177,11 +178,17 @@ public class GrammerSkillsTest {
         assertEquals(showInt, number);
         Assertions.assertThat(showInt).isEqualTo(number);
     }
+    @Test
+    public void readerReadTest() throws IOException {
+        // Set up a BufferedReader with some input data
+//        String inputData = "Hello, World!\nHow are you?\n";
+//        BufferedReader br = new BufferedReader(new StringReader(inputData));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        int x = Integer.parseInt(st.nextToken());
+        int y = Integer.parseInt(st.nextToken());
 
-
-
-
-
+    }
 }
 
 
