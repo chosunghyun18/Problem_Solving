@@ -1,11 +1,12 @@
 package testprac;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.stream.Collectors;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+import java.util.stream.*;
 import java.util.*;
 import java.io.*;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 
 
 public class GrammerSkillsTest {
@@ -13,13 +14,24 @@ public class GrammerSkillsTest {
     @Test
     public void arrayListTest() {
 
-        ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 2, 1));
-        givenList.forEach(System.out::println);
-        Collections.sort(givenList);
-        givenList.forEach(System.out::println);
+        ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
+        givenList.sort(Collections.reverseOrder());
+        System.out.println(givenList); // [7, 6, 3, 2, 1]
+
 
         int[] answer = {1,2,3,4,5};
-        Arrays.sort(answer);
+        int[] answer1 = {1,4,1,4,5};
+
+        Arrays.sort(answer1);
+        for (int item:answer) {
+            System.out.print(item);
+            System.out.print(" ");
+        }
+        System.out.println(" ");
+
+        Collections.reverse(Arrays.asList(answer1));
+
+
         List<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
         List<Integer> answerToListInt = Arrays.stream(answer).boxed().toList();
 
@@ -34,6 +46,12 @@ public class GrammerSkillsTest {
             value /= 10;
 
         }
+        String str = "CADB";
+
+        str = Stream.of(str.split(""))
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.joining());
+        System.out.println(str);
     }
 
     @Test
