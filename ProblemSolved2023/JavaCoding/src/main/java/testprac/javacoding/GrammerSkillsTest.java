@@ -50,13 +50,23 @@ public class GrammerSkillsTest {
     @Test
     public void list_handle_Test() {
         int[] items = {1, 2, 3, 4, 5, 6};
-        ArrayList<Integer> arrlist = new ArrayList<>();
+
+        ArrayList<Integer> arrList = new ArrayList<>();
+
         for (int item : items) {
-            arrlist.add(item);
+            arrList.add(item);
         }
+
         for (int i = 0; i < items.length; i++) {
-            arrlist.add(items[i]);
+            arrList.add(items[i]);
         }
+
+        // given
+        String[] answer = arrList.stream()
+                .map(Object::toString)
+                .toArray(String[]::new);
+
+        Assertions.assertThat(arrList.size()).isEqualTo(answer.length);
 
     }
 
@@ -96,11 +106,28 @@ public class GrammerSkillsTest {
         }
     }
     @Test
-    public int[] dijkstra() {
+    public void dijkstra() {
+        int[][] graphGiven = {
+                {0, 1, 1, 0, 0},
+                {1, 0, 0, 1, 1},
+                {1, 0, 0, 1, 0},
+                {0, 1, 1, 0, 1},
+                {0, 1, 0, 1, 0}
+        };
         List<List<Node>> graph = new ArrayList<>();
-        // src ref start point node
+        int n = graphGiven.length;
+        for(int i = 0 ; i<n ; i++){
+           List<Node> neighbors = new ArrayList<>();
+           for(int j = 0 ; j < n ; j++){
+               if(graphGiven[i][j] == 1){
+                   neighbors.add(new Node(j,1));
+               }
+           }
+           graph.add(neighbors);
+        }
+
+
         int src = 0;
-        int n = graph.size();
         int[] dist = new int[n];
         Arrays.fill(dist, Integer.MAX_VALUE); // fill data
         dist[src] = 0;
@@ -126,7 +153,10 @@ public class GrammerSkillsTest {
             }
         }
 
-        return dist;
+        int [] expect = {0,1,1,2,2};
+
+        assertArrayEquals(expect,dist);
+        Assertions.assertThat(expect).isEqualTo(dist);
     }
 
     @Test
