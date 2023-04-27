@@ -242,7 +242,14 @@ public class GrammerSkillsTest {
         Assertions.assertThat(leftE).isEqualTo(expectEven);
         Assertions.assertThat(leftO).isEqualTo(expectOdd);
     }
-
+    @Test
+    public void multiple_n_test(){
+        int num = 97;
+        int n = 2 ;
+        if (num % n == 0) {
+            System.out.println("b");
+        }
+    }
 }
 
 
