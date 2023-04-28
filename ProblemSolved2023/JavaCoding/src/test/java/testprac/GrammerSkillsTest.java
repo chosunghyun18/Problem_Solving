@@ -90,24 +90,20 @@ public class GrammerSkillsTest {
 
     @Test
     public void list_handle_Test() {
+
         int[] items = {1, 2, 3, 4, 5, 6};
 
-        ArrayList<Integer> arrList = new ArrayList<>();
+        List<Integer> arrList = new ArrayList<>(Arrays.stream(items).boxed().collect(Collectors.toList()));
 
-        for (int item : items) {
-            arrList.add(item);
-        }
-
-        for (int i = 0; i < items.length; i++) {
-            arrList.add(items[i]);
-        }
+        int[] intAnswer = arrList.stream().mapToInt(Integer::intValue).toArray();
 
         // given
-        String[] answer = arrList.stream()
+        String[] stringAnswer = arrList.stream()
                 .map(Object::toString)
                 .toArray(String[]::new);
 
-        Assertions.assertThat(arrList.size()).isEqualTo(answer.length);
+
+        Assertions.assertThat(arrList.size()).isEqualTo(intAnswer.length);
 
     }
 
@@ -349,11 +345,12 @@ public class GrammerSkillsTest {
                 .map(str -> Arrays.stream(str.split(",")).map(Integer::parseInt).collect(Collectors.toList()))
                 .sorted(Comparator.comparingInt(List::size))
                 .collect(Collectors.toList());
-
+        System.out.println(intList);
         List<Integer> ansList = intList.stream()
                 .flatMap(Collection::stream)
                 .distinct()
                 .collect(Collectors.toList());
+        System.out.println(ansList);
         int [] answer = ansList.stream().mapToInt(Integer::intValue).toArray();
 
         for (int i =0 ;i<answer.length ; i++) {
