@@ -1,6 +1,7 @@
 package testprac.programmers;
 
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 
@@ -55,7 +56,7 @@ public class ProgrammersSolveTest {
         for(String item : record ){
             copiedRecord.add(item) ;
             String[] tmpm = item.split(" ");
-            List<String> col = new ArrayList<>();  // store. enter , nick
+            List<String> col = new ArrayList<>();
             if(tmpm[0].equals("Enter")){
                 col.add(tmpm[0]);
                 col.add(tmpm[1]);
@@ -72,26 +73,22 @@ public class ProgrammersSolveTest {
             }
 
         }
-
-//         System.out.println(message);
-//         System.out.println(nickId);
-
-        List<String> answer = new ArrayList<>();
-
-        for(List<String> item: message){
-            if(item.get(0).equals("Enter")){
-                nickId.get(item.get(1));
-                answer.add(nickId.get(item.get(1))+"님이 들어왔습니다.");
-            }
-            else{
-                nickId.get(item.get(1));
-                answer.add(nickId.get(item.get(1))+"님이 나갔습니다.");
-            }
-        }
-
-
-
-        System.out.println(message);
+        nickId.entrySet().stream().forEach(
+                item ->
+                {
+                    message.stream().filter(msg -> msg.get(1).equals(item.getKey())).forEach(msg -> msg.set(1, item.getValue()));
+                }
+        );
+        List<String> answer = message.stream()
+                .map(item -> {
+                    if(item.get(0).equals("Enter")){
+                        return item.get(1) + "님이 들어왔습니다.";
+                    } else {
+                        return item.get(1) + "님이 나갔습니다.";
+                    }
+                })
+                .collect(Collectors.toList());
+        System.out.println(answer);
     }
 
 }
