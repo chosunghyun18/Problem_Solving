@@ -10,29 +10,31 @@ import org.junit.jupiter.api.Test;
 
 
 public class GrammerSkillsTest {
+    @Test
+    public void arrayTest() {
+        int [] arr1 ;
+        int [] arr2 = new int[5]; // [0,0,0,0]
+        int [] arr3 = new int[10];
+        Arrays.fill(arr3,10); // [10,10,10,,,]
 
+    }
     @Test
     public void arrayListTest() {
 
         ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
+        Collections.sort(givenList);
+        System.out.println(givenList);
         givenList.sort(Collections.reverseOrder());
         System.out.println(givenList); // [7, 6, 3, 2, 1]
 
 
-        int[] answer = {1,2,3,4,5};
+
         int[] answer1 = {1,4,1,4,5};
-
         Arrays.sort(answer1);
-        for (int item:answer) {
-            System.out.print(item);
-            System.out.print(" ");
-        }
-        System.out.println(" ");
-
         Collections.reverse(Arrays.asList(answer1));
 
-
-        List<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        int[] answer = {1,2,3,4,5};
+        List<Integer> arr = new ArrayList<>(Arrays.stream(answer).boxed().collect(Collectors.toList()));
         List<Integer> answerToListInt = Arrays.stream(answer).boxed().toList();
 
         Assertions.assertThat(arr).isEqualTo(answerToListInt);
@@ -356,6 +358,10 @@ public class GrammerSkillsTest {
         for (int i =0 ;i<answer.length ; i++) {
             System.out.println(answer[i]);
         }
+    }
+    @Test
+    void fail_ratio_problem_test(){
+
     }
 
 }
