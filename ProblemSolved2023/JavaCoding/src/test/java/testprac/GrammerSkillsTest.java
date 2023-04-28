@@ -250,6 +250,117 @@ public class GrammerSkillsTest {
             System.out.println("b");
         }
     }
+    @Test
+    public void set_test(){
+        // Set can't have a same value
+        Set<String> set = new HashSet<>();
+        Set<String> setEx1 = new TreeSet<>();
+        Set<String> setEx2 = new LinkedHashSet<>();
+
+        set.add("1");
+        set.add("2");
+        set.add("6");
+        set.add("3");
+        System.out.println(set);
+
+        Iterator<String> it = set.iterator(); // 검색을 위한 반복자 생성
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        set.remove("1");
+        System.out.println(set);
+        it = set.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+    }
+
+    @Test
+    void hashSet_test(){
+        Map<String, Integer> hm = new HashMap<String, Integer>();
+
+        // put 메서드 이용 key와 value 추가
+        hm.put("A", 90);
+        hm.put("B", 80);
+        hm.put("C", 80);
+        hm.put("D", 60);
+
+        // size 메서드 이용 저장된 객체 수 출력
+        System.out.println("저장된 객체 수 : " + hm.size());
+
+        // get 메서드로 특정 key에 해당하는 값 출력
+        System.out.println("D의 값 : " + hm.get("D"));
+
+        // 동일한 key로 추가(기존 내용 삭제)
+        hm.put("C", 70);
+        System.out.println("-------------------");
+
+        // keySet 메서드 이용 저장된 모든 key 값을 Set 컬렉션에 저장
+        Set<String> keys = hm.keySet();
+
+        // 반복자 생성
+        Iterator<String> it = keys.iterator();
+        while (it.hasNext()) {
+            String key = it.next(); // Set의 key 값을 하나씩 key에 대입
+            int value = hm.get(key); // 해당 key에 해당하는 value 대입 / 오토 언박싱
+            System.out.println(key + " : " + value);
+        }
+    }
+    @Test
+    void string_replace_kako_test(){
+        String s = "{{2},{2,1},{2,1,3},{2,1,3,4}}" ;
+        String preString = s.substring(2,s.length()-2);
+        preString = preString.replace("{","");
+
+        List<String> preList = new ArrayList(Arrays.asList(preString.split("},")));
+        List<List<Integer>> preIntList = new ArrayList();
+        for(String item :preList){
+            List<Integer> innerList = new ArrayList();
+            for(String is : item.split(",")){
+                innerList.add(Integer.parseInt(is));
+            }
+            preIntList.add(innerList);
+        }
+
+
+        preIntList.sort(Comparator.comparingInt(List::size));
+
+
+        List<Integer> ansList = new ArrayList();
+        for(List<Integer> iteml: preIntList){
+            for(Integer item: iteml){
+                if(!ansList.contains(item)){
+                    ansList.add(item);
+                }
+            }
+        }
+
+        int [] answer = new int [ansList.size()];
+
+        for(int i = 0 ; i < ansList.size();i++){
+            answer[i] = ansList.get(i);
+        }
+
+    }
+    @Test
+    void string_replace_kako_test2(){
+        String s = "{{2},{2,1},{2,1,3},{2,1,3,4}}" ;
+        List<List<Integer>> intList = Arrays.stream(s.substring(2, s.length() - 2).split("\\},\\{"))
+                .map(str -> Arrays.stream(str.split(",")).map(Integer::parseInt).collect(Collectors.toList()))
+                .sorted(Comparator.comparingInt(List::size))
+                .collect(Collectors.toList());
+
+        List<Integer> ansList = intList.stream()
+                .flatMap(Collection::stream)
+                .distinct()
+                .collect(Collectors.toList());
+        int [] answer = ansList.stream().mapToInt(Integer::intValue).toArray();
+
+        for (int i =0 ;i<answer.length ; i++) {
+            System.out.println(answer[i]);
+        }
+    }
+
 }
 
 
