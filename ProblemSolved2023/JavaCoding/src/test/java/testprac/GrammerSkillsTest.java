@@ -16,10 +16,20 @@ public class GrammerSkillsTest {
         int [] arr2 = new int[5]; // [0,0,0,0]
         int [] arr3 = new int[10];
         Arrays.fill(arr3,10); // [10,10,10,,,]
+        float[] arr4 = new float[10];
+        System.out.println(arr4[3]);
 
     }
     @Test
-    public void arrayListTest() {
+    void arrayListHandleTest() {
+//        Array.push    -> ArrayList.add(Object o); // Append the list
+//        Array.pop     -> ArrayList.remove(int index); // Remove list[index]
+//        Array.shift   -> ArrayList.remove(0); // Remove first element
+//        Array.unshift -> ArrayList.add(int index, Object o); // Prepend the list
+    }
+
+    @Test
+    public void arrayToArrayListTest() {
 
         ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
         Collections.sort(givenList);
@@ -360,8 +370,63 @@ public class GrammerSkillsTest {
         }
     }
     @Test
-    void fail_ratio_problem_test(){
+    void fail_ratio_problem_test() {
+        int[] answer = new int[5];
 
+//        System.out.println(answer[-1]);
+
+        for (int i = 0; i < 5; i++) {
+
+            System.out.println(i);
+        }
+
+
+    }
+    @Test
+    void test_coding_turn(){
+            int[][] image = new int[10][10] ;
+
+                int n = image.length;
+
+                int[][] imageRight = new int[n][n];
+                int[][] imageDown = new int[n][n];
+                int[][] imageCross = new int[n][n];
+
+                for (int i =0 ; i<n;i++){
+                    for (int j =0 ; j < n;j++){
+                        imageRight[i][n-1-j]=image[i][j];
+                        imageDown[n-1-i][j]=image[i][j];
+                        imageCross[n-1-i][n-1-j] =image[i][j];
+                    }
+                }
+
+                int[][] answer = new int[2*n][2*n];
+
+
+                for(int i = 0;i<n;i++){
+                    for (int j =0 ; j < n;j++){
+                        answer[i][j] = image[i][j];
+                    }
+                }
+
+                for(int i = n;i<2*n;i++){
+                    for (int j =0 ; j < n;j++){
+                        answer[i][j] = imageDown[i-n][j];
+                    }
+                }
+
+                for(int i = 0;i<n;i++){
+                    for (int j =n ; j < 2*n;j++){
+                        answer[i][j] = imageRight[i][j-n];
+                    }
+                }
+
+                for(int i = n;i<2*n;i++){
+                    for (int j =n ; j < 2*n;j++)
+                    {
+                        answer[i][j] = imageCross[i-n][j-n];
+                    }
+                }
     }
 
 }
