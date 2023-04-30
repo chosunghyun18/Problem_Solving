@@ -142,7 +142,6 @@ public class GrammerSkillsTest {
         System.out.println(pql.peek()); // get
         System.out.println(pql.poll()); // get and delete
         System.out.println(pql.peek());
-
     }
 
     static class Node {

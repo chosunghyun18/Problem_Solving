@@ -1,7 +1,7 @@
 package testprac.javabasic;
 
 import java.math.BigInteger;
-import java.util.*;
+
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -52,13 +52,20 @@ public class InflearnStudy {
 
 
 
-
     @Test
     void data_print_test2(){
         String name = "kris";
         int hour = 15;
+        /*
+            System.out.println(name + hour+"이다");
+            naming sites :
+            https://google.github.io/styleguide/javaguide.html
+        */
 
-        System.out.println(name + hour+"이다");
+
+        // 상수 선언
+        final String CODE = "1204";
+        final String CODE_NUMBER = "KR1";
     }
 
     @Test
