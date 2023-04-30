@@ -50,7 +50,9 @@ public class InflearnStudy {
         System.out.println("BigInteger : "+bigInteger);
     }
 
-
+    // 상수 선언
+    static final String CODE = "1204";
+    static final String CODE_NUMBER = "KR1";
 
     @Test
     void data_print_test2(){
@@ -62,10 +64,10 @@ public class InflearnStudy {
             https://google.github.io/styleguide/javaguide.html
         */
 
+        final String CODE = "1204"; // NODE class
 
-        // 상수 선언
-        final String CODE = "1204";
-        final String CODE_NUMBER = "KR1";
+        final int koreanCode = 1204;
+
     }
 
     @Test
