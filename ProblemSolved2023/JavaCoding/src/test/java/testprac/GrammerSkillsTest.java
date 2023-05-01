@@ -32,15 +32,18 @@ public class GrammerSkillsTest {
     public void arrayToArrayListTest() {
 
         ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
-        Collections.sort(givenList);
-        System.out.println(givenList);
-        givenList.sort(Collections.reverseOrder());
-        System.out.println(givenList); // [7, 6, 3, 2, 1]
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(1,9,8,2,37,31,12));
+        Collections.sort(numbers);
+        System.out.println(numbers);
+
+        numbers.sort(Collections.reverseOrder());
+        System.out.println(numbers);
 
 
 
         int[] answer1 = {1,4,1,4,5};
         Arrays.sort(answer1);
+
         Collections.reverse(Arrays.asList(answer1));
 
         int[] answer = {1,2,3,4,5};
@@ -116,6 +119,10 @@ public class GrammerSkillsTest {
 
 
         Assertions.assertThat(arrList.size()).isEqualTo(intAnswer.length);
+
+    }
+    @Test
+    public void sorting_list_handle(){
 
     }
 
