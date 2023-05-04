@@ -2,30 +2,33 @@ package testprac.javabasic;
 
 import java.math.BigInteger;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class InflearnStudy {
 
     @Test
-    void data_print_test1(){
+    void data_print_test1() {
         // 기본 출력
         System.out.println("Hello World!");
         // 문자열 , 숫자 , 불리언
         System.out.println(12);
         System.out.println(1_000);
-        int given = 1_000+12 ;
+        int given = 1_000 + 12;
 
         int expect = 1_012;
         Assertions.assertThat(given).isEqualTo(expect);
-
 
         double score = 90.5;
         Double score2 = 90.5;
 
         char grade = 'A';  // "A" 불가
         Character grade2 = 'A';
-        System.out.println(score+grade);
+        System.out.println(score + grade);
 
         boolean pass = true;
         Boolean pass1 = true;
@@ -34,18 +37,17 @@ public class InflearnStudy {
         float fex = 3.141592F;
         System.out.println(fex);
 
-
-        given = 2_147_483_647 ; // max int size
+        given = 2_147_483_647; // max int size
         System.out.println(given);
 
         long lex = 9_223_372_036_854_775_807L; // max long size
-        System.out.println("lex : "+ lex);
+        System.out.println("lex : " + lex);
         // int ,long, float, double,char,String,boolean
         /*
          Point 1
          */
         BigInteger bigInteger = new BigInteger("31415921234567800090000000000000"); // 무한으로 입력 가능 under score 사용 불가
-        System.out.println("BigInteger : "+bigInteger);
+        System.out.println("BigInteger : " + bigInteger);
 
         /*
          Point 2
@@ -90,7 +92,7 @@ public class InflearnStudy {
     static final String CODE_NUMBER = "KR1";
 
     @Test
-    void data_print_test2(){
+    void data_print_test2() {
         String name = "kris";
         int hour = 15;
         /*
@@ -106,17 +108,17 @@ public class InflearnStudy {
     }
 
     @Test
-    void typeCasting_test(){
-        int score = 93 ;
+    void typeCasting_test() {
+        int score = 93;
         System.out.println(score);
-        System.out.println((double)score);
-        System.out.println((float)score);
+        System.out.println((double) score);
+        System.out.println((float) score);
 
         float score_f = 93.0f;
-        Assertions.assertThat(score).isEqualTo((int)score_f);
+        Assertions.assertThat(score).isEqualTo((int) score_f);
 
         double score_d = 93.0d;
-        Assertions.assertThat(score).isEqualTo((int)score_d);
+        Assertions.assertThat(score).isEqualTo((int) score_d);
 
         double dex = 3.141592123456789d;
         double dex1 = 3.141592123456789d;
@@ -126,5 +128,121 @@ public class InflearnStudy {
         Assertions.assertThat(dex).isEqualTo(dex2);
         Assertions.assertThat(dex1).isEqualTo(dex2);
     }
+
+    @Test
+    void operator_test() {
+        System.out.println(5.0 / 2);
+
+        int expect = 2;
+        Assertions.assertThat(expect).isEqualTo(5 / 2);
+
+        System.out.println(expect++); // out : 2
+        System.out.println(expect);  // out : 3
+    }
+
+    @Test
+    void operation_string() {
+        String s = "aa bad";
+        String expect = "AA BAD";
+        Assertions.assertThat(expect).isEqualTo(s.toUpperCase());
+
+        String sentence = "apple good";
+        boolean expectCheck = true;
+
+        Assertions.assertThat(expectCheck).isEqualTo(sentence.contains("apple"));
+        Assertions.assertThat(-1).isEqualTo(sentence.indexOf("banan"));
+
+        System.out.println(s.startsWith("aa"));
+        /*
+        - startsWith ,endWith , indexOf,lastIndexOf ,contains,, etc
+
+        - String replace(CharSequnce target, CharSequence replacement)
+
+        - String replaceAll(String regex, String replacement)
+        */
+        String exSentence = "one two three four five six";
+        System.out.println("sub1 :" + exSentence.substring(exSentence.indexOf("five")));
+        System.out.println("sub2 :" + exSentence.substring(exSentence.indexOf("f")));
+        System.out.println("sub3 :" + exSentence.substring(3));
+
+        String ex = "  bob  ";
+        System.out.println(ex.trim());
+        String ex1 = "bob";
+        System.out.println(ex.trim().equals(ex1));
+        /*
+        String equalsIgnoreCase
+         */
+    }
+
+
+
+
+    /*
+    * Java Study 공유 점
+    *  - Switch Vs If else
+    *  - 동일성 비교 동등성 비교
+    *  - for 문
+    * */
+
+    @Test
+    void switchVsIfElse(){
+        String str1 = "C";
+        switch (str1) {
+            case "A":
+                System.out.println(str1);
+            case "B":
+                System.out.println(str1);
+            case "C":
+                System.out.println(str1);
+        }
+    }
+    @Test
+    void switchVSIfElse(){
+        String str1 = "C";
+        if ("A".equals(str1)) {
+            System.out.println(str1);
+        } else if ("B".equals(str1))
+        {
+            System.out.println(str1);
+        } else if ("C".equals(str1)) {
+            System.out.println(str1);
+        }
+
+
+        // IF 문의 CPU branch prediction  , 분기 예측의 성능을 고려해야한다
+    }
+
+
+    @Test
+    void compare_string() {
+
+        //1.
+        // 동일성 비교 동등성 비교
+
+        String s1 ="123";
+        String s2 ="123";
+        System.out.println( s1 == s2 ); // memory data check
+        if (s1 == s2 && s1 != s2) {
+            System.out.println(1);
+        }
+
+    }
+    @Test
+    void SimpleFor(){
+        //3 for 문
+
+        List<Integer> arrList = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        // Enhanced For
+        for (Integer item : arrList){
+            System.out.println(item);
+        }
+        // Stream For
+        arrList.stream().map(Object::toString).forEach(System.out::println);
+    }
+
+
+
+
+
 
 }
