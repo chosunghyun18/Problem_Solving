@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -185,7 +186,7 @@ public class InflearnStudy {
     * */
 
     @Test
-    void switchVsIfElse(){
+    void switchVsIfElse_Switch_test(){
         String str1 = "C";
         switch (str1) {
             case "A":
@@ -197,7 +198,7 @@ public class InflearnStudy {
         }
     }
     @Test
-    void switchVSIfElse(){
+    void switchVSIfElse_If_else_test(){
         String str1 = "C";
         if ("A".equals(str1)) {
             System.out.println(str1);
@@ -215,16 +216,25 @@ public class InflearnStudy {
 
     @Test
     void compare_string() {
-
-        //1.
+        //2.
         // 동일성 비교 동등성 비교
+        String str1 ="ABC";
+        String str2 ="ABC";
 
-        String s1 ="123";
-        String s2 ="123";
-        System.out.println( s1 == s2 ); // memory data check
-        if (s1 == s2 && s1 != s2) {
-            System.out.println(1);
+        System.out.println("str1 hashcode: " + str1.hashCode());
+        System.out.println("str2 hashcode: " + str2.hashCode());
+
+        if (str1.hashCode() == str2.hashCode()) {
+            System.out.println("Hash codes are the same");
+            if (str1.equals(str2)) {
+                System.out.println("Strings are equal");
+            } else {
+                System.out.println("Strings are not equal");
+            }
+        } else {
+            System.out.println("Hash codes are not the same");
         }
+
 
     }
     @Test
@@ -240,9 +250,16 @@ public class InflearnStudy {
         arrList.stream().map(Object::toString).forEach(System.out::println);
     }
 
+    @Test
+    void SimpleArrayList(){
+        int[] items = {1,2,3,4};
+        List<Integer> arrayList = new ArrayList<>(Arrays.stream(items).boxed().collect(Collectors.toList()));
 
+        int[] intAnswer = arrayList.stream().mapToInt(Integer::intValue).toArray();
+        int expect = 1;
 
-
+        Assertions.assertThat(intAnswer[0]).isEqualTo(expect);
+    }
 
 
 }
