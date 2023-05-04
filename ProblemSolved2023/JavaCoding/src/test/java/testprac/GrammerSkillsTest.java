@@ -21,14 +21,6 @@ public class GrammerSkillsTest {
 
     }
     @Test
-    void arrayListHandleTest() {
-//        Array.push    -> ArrayList.add(Object o); // Append the list
-//        Array.pop     -> ArrayList.remove(int index); // Remove list[index]
-//        Array.shift   -> ArrayList.remove(0); // Remove first element
-//        Array.unshift -> ArrayList.add(int index, Object o); // Prepend the list
-    }
-
-    @Test
     public void arrayToArrayListTest() {
 
         ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
@@ -121,26 +113,10 @@ public class GrammerSkillsTest {
         Assertions.assertThat(arrList.size()).isEqualTo(intAnswer.length);
 
     }
-    @Test
-    public void sorting_list_handle(){
-
-    }
-
-    @Test
-    public void String_handle_test() {
-        String numbers = "789123";
-        String[] number = numbers.split("");
-        for (String n : number) {
-            System.out.println(n);
-        }
-    }
 
     @Test
     public void priority_queue() {
         PriorityQueue<Integer> pql = new PriorityQueue<>();
-        //PriorityQueue<Integer> priorityQueueUpper = new PriorityQueue<>(Collections.reverseOrder());
-
-
         pql.offer(20);
         pql.offer(15);
         pql.offer(10); // if capa is small return false
@@ -234,14 +210,10 @@ public class GrammerSkillsTest {
     }
     @Test
     public void readerReadTest() throws IOException {
-        // Set up a BufferedReader with some input data
-//        String inputData = "Hello, World!\nHow are you?\n";
-//        BufferedReader br = new BufferedReader(new StringReader(inputData));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine()," ");
         int x = Integer.parseInt(st.nextToken());
         int y = Integer.parseInt(st.nextToken());
-
     }
     @Test
     public void devide_test() {
@@ -434,7 +406,44 @@ public class GrammerSkillsTest {
                     }
                 }
     }
+    @Test
+    void SortingCaseTest(){
+        int[][] arr = {{1,2,3,4,5},{1,2,23,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
+        Arrays.sort(arr[1]);
+        for(int item : arr[1]){
+            System.out.println(item);
+        }
 
+        List<CompareNode> compareNodes = new ArrayList<>();
+        compareNodes.add(new CompareNode(1,2,3));
+        compareNodes.add(new CompareNode(7,3,3));
+        compareNodes.add(new CompareNode(2,2,1));
+        compareNodes.add(new CompareNode(2,2,3));
+        for (CompareNode cn :compareNodes){
+            System.out.println(cn.toString());
+        }
+
+
+    }
+    public static class CompareNode implements Comparable<CompareNode>{
+        private int cost1;
+        private int cost2;
+        private int cost3;
+
+        public CompareNode(int i, int i1, int i2) {
+            this.cost1 = i ;
+            this.cost2 = i1;
+            this.cost3 = i2;
+        }
+        @Override
+        public String toString() {
+            return "{"+cost1 + cost2 +cost3+"}" ;
+        }
+        @Override
+        public int compareTo(CompareNode o) {
+            return 0;
+        }
+    }
 }
 
 
