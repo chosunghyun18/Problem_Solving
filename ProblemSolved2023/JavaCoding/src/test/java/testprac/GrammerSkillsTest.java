@@ -18,7 +18,7 @@ public class GrammerSkillsTest {
         Arrays.fill(arr3,10); // [10,10,10,,,]
         float[] arr4 = new float[10];
         System.out.println(arr4[3]);
-
+        System.out.println(Arrays.stream(arr2).map(e->e).toString());
     }
     @Test
     public void arrayToArrayListTest() {
@@ -30,8 +30,6 @@ public class GrammerSkillsTest {
 
         numbers.sort(Collections.reverseOrder());
         System.out.println(numbers);
-
-
 
         int[] answer1 = {1,4,1,4,5};
         Arrays.sort(answer1);
@@ -410,15 +408,12 @@ public class GrammerSkillsTest {
     void SortingCaseTest(){
         int[][] arr = {{1,2,3,4,5},{1,2,23,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
         Arrays.sort(arr[1]);
-        for(int item : arr[1]){
-            System.out.println(item);
-        }
-
         List<CompareNode> compareNodes = new ArrayList<>();
         compareNodes.add(new CompareNode(1,2,3));
         compareNodes.add(new CompareNode(7,3,2));
         compareNodes.add(new CompareNode(2,2,1));
         compareNodes.add(new CompareNode(2,2,6));
+        Collections.sort(compareNodes,(a,b) -> a.cost3-b.cost3);
         Collections.sort(compareNodes); //
         System.out.println(compareNodes);
         int[] scores = {123,240,131,42,13,41};
