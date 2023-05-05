@@ -416,15 +416,21 @@ public class GrammerSkillsTest {
 
         List<CompareNode> compareNodes = new ArrayList<>();
         compareNodes.add(new CompareNode(1,2,3));
-        compareNodes.add(new CompareNode(7,3,3));
+        compareNodes.add(new CompareNode(7,3,2));
         compareNodes.add(new CompareNode(2,2,1));
-        compareNodes.add(new CompareNode(2,2,3));
-        for (CompareNode cn :compareNodes){
-            System.out.println(cn.toString());
-        }
-
-
+        compareNodes.add(new CompareNode(2,2,6));
+        Collections.sort(compareNodes); //
+        System.out.println(compareNodes);
+        int[] scores = {123,240,131,42,13,41};
+        Arrays.sort(scores);  //   DualPivotQuicksort : in random element  dual pivot ruick sort is faster than quick sort
+        System.out.println(Arrays.toString(scores));
     }
+
+    // Arrays.sort() :  DualPivotQuicksort  : 평균 : O(nlog(n)) / 최악 : O(n^2)
+    // Collections.sort() : TimSort (삽입정렬과 합병정렬을 결합한 정렬) : 평균, 최악 : O(nlog(n))
+
+
+
     public static class CompareNode implements Comparable<CompareNode>{
         private int cost1;
         private int cost2;
@@ -441,7 +447,9 @@ public class GrammerSkillsTest {
         }
         @Override
         public int compareTo(CompareNode o) {
-            return 0;
+            //return o.cost3 - cost3; // 내림 차순 정렬
+//            return cost3-o.cost3;
+            return cost1-o.cost1;
         }
     }
 }
