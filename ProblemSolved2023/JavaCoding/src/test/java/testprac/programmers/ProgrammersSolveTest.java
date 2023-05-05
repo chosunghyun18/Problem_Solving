@@ -191,5 +191,74 @@ public class ProgrammersSolveTest {
 
         Assertions.assertThat(answer).isEqualTo(9);
     }
+    void kakao18Blind_dart_shortOne_test() {
+        String dartResult = "1D2S#10S";
+        StringBuilder sb = new StringBuilder(dartResult);
+        List<String> dartItem = new ArrayList<>();
+
+        // split the input string into dart items
+        for (int i = 0; i < sb.length(); i++) {
+            char c = sb.charAt(i);
+            if (Character.isDigit(c)) {
+                // handle multi-digit numbers
+                int j = i;
+                while (j < sb.length() && Character.isDigit(sb.charAt(j))) {
+                    j++;
+                }
+                dartItem.add(sb.substring(i, j));
+                i = j - 1;
+            } else {
+                dartItem.add(Character.toString(c));
+            }
+        }
+
+        int[] ans = new int[3];
+        int index = 0;
+        for (int i = 0; i < dartItem.size(); i++) {
+            String item = dartItem.get(i);
+            switch (item) {
+                case "S":
+                    ans[index] = Integer.parseInt(dartItem.get(i - 1));
+                    index++;
+                    break;
+                case "D":
+                    ans[index] = (int) Math.pow(Integer.parseInt(dartItem.get(i - 1)), 2);
+                    index++;
+                    break;
+                case "T":
+                    ans[index] = (int) Math.pow(Integer.parseInt(dartItem.get(i - 1)), 3);
+                    index++;
+                    break;
+                case "*":
+                    if (i == 2) {
+                        ans[0] *= 2;
+                    } else if (i == dartItem.size() - 1) {
+                        ans[1] *= 2;
+                        ans[2] *= 2;
+                    } else {
+                        ans[index - 1] *= 2;
+                        ans[index] *= 2;
+                    }
+                    break;
+                case "#":
+                    if (i == 2) {
+                        ans[0] *= -1;
+                    } else if (i == dartItem.size() - 1) {
+                        ans[2] *= -1;
+                    } else {
+                        ans[index - 1] *= -1;
+                    }
+                    break;
+            }
+        }
+
+        int answer = 0;
+        for (int item : ans) {
+            answer += item;
+        }
+
+        Assertions.assertThat(answer).isEqualTo(9);
+    }
+
 }
 
