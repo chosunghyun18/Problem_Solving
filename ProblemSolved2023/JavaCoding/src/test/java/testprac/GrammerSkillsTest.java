@@ -85,7 +85,7 @@ public class GrammerSkillsTest {
         List<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
         List<Integer> subList = arr.subList(2,arr.size());
         List<Integer> answerToListInt = new ArrayList<>(Arrays.stream(answer).boxed().collect(Collectors.toList()));
-        assertArrayEquals(answer,answerToListInt.stream().mapToInt(i->i).toArray());
+        assertArrayEquals(answer,answerToListInt.stream() .mapToInt(i->i).toArray());
 
     }
 
@@ -426,7 +426,7 @@ public class GrammerSkillsTest {
 
 
 
-    public static class CompareNode implements Comparable<CompareNode>{
+    public class CompareNode implements Comparable<CompareNode>{
         private int cost1;
         private int cost2;
         private int cost3;
@@ -447,6 +447,26 @@ public class GrammerSkillsTest {
             return cost1-o.cost1;
         }
     }
+    @Test
+    void map_test(){
+        Map<Integer,String> map = new HashMap<>(); // 순서를 보장하지 않음
+        map.put(1, "One");
+        map.put(2, "Two");
+        map.put(3, "Three");
+
+        // Print out the values using the Map interface reference
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
+        String exp = map.getOrDefault(1,"this Is Empty")+"want";
+    }
+
+
+
+
+
+
+
 }
 
 

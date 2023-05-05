@@ -6,43 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 
 public class ProgrammersSolveTest {
-    @Test
-    void sublist()
-    {
-//        int[] arr;
-//        int[] query;
-//        int check = 0 ;
-//        List<Integer> giarr = new ArrayList();
-//
-//        for(int item : arr)
-//        {
-//            giarr.add(item);
-//        }
-//        for(int item : query){
-//            if(check % 2 == 0){
-//                giarr = giarr.subList(0,item+1);
-//            }
-//            else {
-//                giarr = giarr.subList(item ,giarr.size());
-//            }
-//
-//            check += 1 ;
-//        }
-//
-//        int[] answer = new int[giarr.size()];
-//        for(int i = 0 ; i < giarr.size();i++){
-//            answer[i] = giarr.get(i);
-//        }
-    }
-    @Test
-    void checkMap(){
-        Map<String, String> idMap = new HashMap<>();
-        idMap.put("a","1");
-        idMap.put("b","1");
-        System.out.println(idMap.get("b"));
-
-    }
-
 
     @Test
     void kakao_Blind_2019_OpenChat_Simulation(){
@@ -107,97 +70,49 @@ public class ProgrammersSolveTest {
             System.out.print(" ");
         }
     }
-    class kakao_Blind_2019_fail_Simulation_answer1 {
-        public int[] solution(int N, int[] stages) {
-            int[] answer = new int[N];
-            int userNum = stages.length;
-            int endLevel = N;
-            Arrays.sort(stages);
-            int[] stageFail = new int[endLevel+1]; //[0,1,2,,,5]
-            int index = 0 ;
+    @Test
+    void kakao19Final_test() {
+            //given
+            int N = 5;
+            int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+
+            Arrays.sort(stages);   // Arrays.stream(stages).forEach(System.out::println);
+
+            System.out.println(Arrays.stream(stages)
+                    .mapToObj(Integer::toString)
+                    .collect(Collectors.joining(" ")));
+
+            Map<Integer,Integer> clearStage = new HashMap<>();
+
             for(int item : stages){
-                int count = stageFail[item-1];
-                stageFail[item-1] = ++count;
-            }
-            float [] ratio = new float[stageFail.length];
-            //userNum
-            int counted = 0 ;
-            index = 0;
-            for(int item : stageFail){
-                float input = item*0.1f;
-                if(userNum-counted != 0) {
-                    ratio[index] = input/(userNum-counted);
-                    index++;
-                    counted += item ;
-                }
-                else {
-                    ratio[index] = 0;
-                    break;
-                }
+                clearStage.put(item,clearStage.getOrDefault(item,0)+1);
             }
 
-            List<StageLev> arr = new ArrayList();
-            for(int i = 0 ; i < endLevel;i++)
-            {
-                arr.add(new StageLev(i+1,(int)(ratio[i]*100_000_000)));
-            }
-            Collections.sort(arr,(a,b) -> b.ratio - a.ratio);
-            // System.out.println(arr.toString());
-            for(int i = 0 ; i < endLevel;i++) {
-                answer[i] = arr.get(i).getStage();
-            }
-            return answer;
-        }
-    }
+            System.out.println(clearStage);
 
-    class StageLev {
-        public int stage;
-        public int ratio;
-
-        public StageLev(int i , int r) {
-            this.stage = i;
-            this.ratio = r;
-        }
-        public int getStage(){
-            return this.stage;
-        }
-        @Override
-        public String toString(){
-            return "(" + stage +":" +ratio+"}";
-        }
-    }
-    class kakao_Blind_2019_fail_Simulation_answer2 {
-        public int[] solution(int N, int[] stages) {
-            int[] answer = new int[N];
-            int userNum = stages.length;
-            int endLevel = N;
-
-            Map<Integer, Integer> stageFail = new HashMap<>();
-            for(int item : stages){
-                stageFail.put(item, stageFail.getOrDefault(item, 0) + 1);
-            }
-
-            float[] ratio = new float[N];
+            double[] ratio = new double[N+1];
             int counted = 0;
-            for(int i = 0; i < N; i++){
-                int item = stageFail.getOrDefault(i+1, 0);
-                if(userNum-counted != 0 && item != 0){
-                    ratio[i] = (float)item/(userNum-counted);
+            for(int i = 1 ; i <N+1 ; i++) {
+                int item = clearStage.getOrDefault(i,0);
+                if(item != 0 && (stages.length - counted) != 0 ){
+                    ratio[i] = (double) item /(stages.length - counted);
                     counted += item;
                 }
             }
+            System.out.println(Arrays.stream(ratio)
+                    .mapToObj(Double::toString)
+                    .collect(Collectors.joining(" ")));
 
-            List<Integer> arr = new ArrayList<>();
-            for(int i = 0 ; i < endLevel; i++){
-                arr.add(i+1);
+            List<Integer> anar = new ArrayList();
+            for(int i = 1 ;i<N+1;i++){
+                anar.add(i);
             }
-            Collections.sort(arr, (a, b) -> Float.compare(ratio[b-1], ratio[a-1]));
 
-            for(int i = 0 ; i < endLevel; i++){
-                answer[i] = arr.get(i);
-            }
-            return answer;
-        }
+            Collections.sort(anar,(a,b)->Double.compare(ratio[b],ratio[a]));
+
+            int[] answer = anar.stream().mapToInt(i->i).toArray();
+
+            System.out.println(answer);
     }
-
 }
+
