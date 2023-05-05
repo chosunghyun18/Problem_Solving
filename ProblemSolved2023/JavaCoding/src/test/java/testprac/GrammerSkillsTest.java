@@ -346,19 +346,6 @@ public class GrammerSkillsTest {
         }
     }
     @Test
-    void fail_ratio_problem_test() {
-        int[] answer = new int[5];
-
-//        System.out.println(answer[-1]);
-
-        for (int i = 0; i < 5; i++) {
-
-            System.out.println(i);
-        }
-
-
-    }
-    @Test
     void test_coding_turn(){
             int[][] image = new int[10][10] ;
 
@@ -420,12 +407,8 @@ public class GrammerSkillsTest {
         Arrays.sort(scores);  //   DualPivotQuicksort : in random element  dual pivot ruick sort is faster than quick sort
         System.out.println(Arrays.toString(scores));
     }
-
     // Arrays.sort() :  DualPivotQuicksort  : 평균 : O(nlog(n)) / 최악 : O(n^2)
     // Collections.sort() : TimSort (삽입정렬과 합병정렬을 결합한 정렬) : 평균, 최악 : O(nlog(n))
-
-
-
     public class CompareNode implements Comparable<CompareNode>{
         private int cost1;
         private int cost2;
@@ -453,20 +436,12 @@ public class GrammerSkillsTest {
         map.put(1, "One");
         map.put(2, "Two");
         map.put(3, "Three");
-
         // Print out the values using the Map interface reference
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
         String exp = map.getOrDefault(1,"this Is Empty")+"want";
     }
-
-
-
-
-
-
-
 }
 
 
