@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 
 
-public class GrammerSkillsTest {
+public class GrammarSkillsTest {
     @Test
     public void arrayTest() {
         int [] arr1 ;

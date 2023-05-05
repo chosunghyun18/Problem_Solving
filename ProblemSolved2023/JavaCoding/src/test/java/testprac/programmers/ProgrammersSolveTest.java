@@ -2,6 +2,7 @@ package testprac.programmers;
 
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 
@@ -113,6 +114,82 @@ public class ProgrammersSolveTest {
             int[] answer = anar.stream().mapToInt(i->i).toArray();
 
             System.out.println(answer);
+    }
+    @Test
+    void kakao18Blind_dart_test(){
+        String dartResult = "1D2S#10S";
+
+        String[] re = dartResult.split("");
+
+        List<String> dartItem = new ArrayList(Arrays.stream(re)
+                .collect(Collectors.toList())
+        );
+        // 1 ,0 -> 10 으로 처리
+        for(int i = 0; i < dartItem.size(); i++){
+            if (dartItem.get(i).equals("0")) {
+                if(i != 0 ){
+                    if(dartItem.get(i-1).equals("1")) {
+                        dartItem.set(i-1,"10");
+                        dartItem.remove(i);
+                    }
+                }
+            }
+        }
+        // System.out.println(dartItem);
+
+        int[] ans = new int[3];
+        int index = 0 ;
+        for(int i = 0; i < dartItem.size(); i++){
+            if( dartItem.get(i).equals("S"))
+            {
+                ans[index] = Integer.parseInt(dartItem.get(i-1));
+                index += 1;
+            }
+            else if(dartItem.get(i).equals("D")) {
+                ans[index] = (int)Math.pow(Integer.parseInt(dartItem.get(i-1)),2);
+                index += 1;
+            }
+            else if(dartItem.get(i).equals("T")) {
+                ans[index] =  (int)Math.pow(Integer.parseInt(dartItem.get(i-1)),3);
+                index += 1;
+            }
+        }
+
+        index = 0;
+        for(int i = 0; i < dartItem.size(); i++){
+            if( dartItem.get(i).equals("*"))
+            {
+                if(i==2)
+                {
+                    ans[0] = ans[0]*2;
+                }else if(i==dartItem.size()-1){
+                    ans[2] = ans[2]*2;
+                    ans[1] = ans[1]*2;
+                }else{
+                    ans[0] = ans[0]*2;
+                    ans[1] = ans[1]*2;
+                }
+            }else if( dartItem.get(i).equals("#"))
+            {
+                if(i==2){
+                    ans[0] = ans[0]*(-1);
+                }else if(i == dartItem.size()-1){
+                    ans[2] = ans[2]*(-1);
+                }else{
+                    ans[1] = ans[1]*(-1);
+                }
+            }
+        }
+
+        // System.out.println(Arrays.stream(ans)
+        //                    .boxed()
+        //                     .collect(Collectors.toList()));
+        int answer = 0;
+        for(int item : ans){
+            answer += item ;
+        }
+
+        Assertions.assertThat(answer).isEqualTo(9);
     }
 }
 
