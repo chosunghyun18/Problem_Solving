@@ -11,27 +11,40 @@ import org.junit.jupiter.api.Test;
 
 public class GrammarSkillsTest {
     @Test
-    public void arrayTest() {
-        int [] arr1 ;
+    public void array_to_list_List_to_array() {
+        int [] arr1 = {1,2,3,4,5,6,7,7,9};
         int [] arr2 = new int[5]; // [0,0,0,0]
         int [] arr3 = new int[10];
+
         Arrays.fill(arr3,10); // [10,10,10,,,]
-        float[] arr4 = new float[10];
-        System.out.println(arr4[3]);
-        System.out.println(Arrays.stream(arr2).map(e->e).toString());
+
+        System.out.println(Arrays.stream(arr2)
+                        .boxed()
+                        .collect(Collectors.toList()));
+
+        List<Integer> numbers = new ArrayList<>(Arrays.stream(arr1).boxed().collect(Collectors.toList()));
+        int[] numberArrMinus = numbers.stream().mapToInt(i-> -i).toArray();
+
+        int[] numberArr = numbers.stream().mapToInt(i-> i).toArray();
+        System.out.println(Arrays.stream(numberArr)
+                .boxed()
+                .collect(Collectors.toList()));
+
     }
     @Test
     public void arrayToArrayListTest() {
 
         ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
+
         List<Integer> numbers = new ArrayList<>(Arrays.asList(1,9,8,2,37,31,12));
+
         Collections.sort(numbers);
-        System.out.println(numbers);
 
         numbers.sort(Collections.reverseOrder());
-        System.out.println(numbers);
+
 
         int[] answer1 = {1,4,1,4,5};
+
         Arrays.sort(answer1);
 
         Collections.reverse(Arrays.asList(answer1));
@@ -442,6 +455,7 @@ public class GrammarSkillsTest {
         }
         String exp = map.getOrDefault(1,"this Is Empty")+"want";
     }
+
 }
 
 
