@@ -62,13 +62,14 @@ public class GrammarSkillsTest {
         while (value != 0) {
             System.out.println(value % 10);
             value /= 10;
-
         }
+
         String str = "CADB";
 
         str = Stream.of(str.split(""))
                 .sorted(Comparator.reverseOrder())
-                .collect(Collectors.joining());
+                .collect(Collectors.joining(" ")); //D C B A
+
         System.out.println(str);
     }
 
@@ -346,12 +347,16 @@ public class GrammarSkillsTest {
                 .map(str -> Arrays.stream(str.split(",")).map(Integer::parseInt).collect(Collectors.toList()))
                 .sorted(Comparator.comparingInt(List::size))
                 .collect(Collectors.toList());
+
         System.out.println(intList);
+
         List<Integer> ansList = intList.stream()
                 .flatMap(Collection::stream)
                 .distinct()
                 .collect(Collectors.toList());
+
         System.out.println(ansList);
+
         int [] answer = ansList.stream().mapToInt(Integer::intValue).toArray();
 
         for (int i =0 ;i<answer.length ; i++) {

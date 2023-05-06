@@ -86,20 +86,27 @@ public class ProgrammersSolveTest {
             Map<Integer,Integer> clearStage = new HashMap<>();
 
             for(int item : stages){
-                clearStage.put(item,clearStage.getOrDefault(item,0)+1);
+                clearStage.put(item,clearStage.getOrDefault(item,0) + 1);
             }
 
-            System.out.println(clearStage);
+            System.out.println(clearStage); //   {1=1, 2=3, 3=2, 4=1, 6=1}
 
-            double[] ratio = new double[N+1];
+
+        double[] ratio = new double[N+1];
+
             int counted = 0;
+
             for(int i = 1 ; i <N+1 ; i++) {
+
                 int item = clearStage.getOrDefault(i,0);
+
                 if(item != 0 && (stages.length - counted) != 0 ){
                     ratio[i] = (double) item /(stages.length - counted);
                     counted += item;
                 }
+
             }
+
             System.out.println(Arrays.stream(ratio)
                     .mapToObj(Double::toString)
                     .collect(Collectors.joining(" ")));
@@ -108,12 +115,14 @@ public class ProgrammersSolveTest {
             for(int i = 1 ;i<N+1;i++){
                 anar.add(i);
             }
-
+            //anar : [1, 2, 3, 4, 5]     ratio :
             Collections.sort(anar,(a,b)->Double.compare(ratio[b],ratio[a]));
-
+            //anar : [3, 4, 2, 1, 5]
             int[] answer = anar.stream().mapToInt(i->i).toArray();
 
-            System.out.println(answer);
+            System.out.println(Arrays.stream(answer)
+                                        .boxed()
+                                        .collect(Collectors.toList())); //[3, 4, 2, 1, 5]
     }
     @Test
     void kakao18Blind_dart_test(){
@@ -135,8 +144,6 @@ public class ProgrammersSolveTest {
                 }
             }
         }
-        // System.out.println(dartItem);
-
         int[] ans = new int[3];
         int index = 0 ;
         for(int i = 0; i < dartItem.size(); i++){
