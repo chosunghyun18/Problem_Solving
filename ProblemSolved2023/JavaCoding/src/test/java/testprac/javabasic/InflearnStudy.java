@@ -261,5 +261,42 @@ public class InflearnStudy {
         Assertions.assertThat(intAnswer[0]).isEqualTo(expect);
     }
 
+    @Test
+    void switchVsIfElse_Switch_Enhanced_test(){
+        String str1 = "C";
+        switch (str1) {
+            case "A":
+                System.out.println(str1);
+            case "B":
+                System.out.println(str1);
+            case "C":
+                System.out.println(str1);
+        }
+
+        switch (str1) {
+            case "A" -> System.out.println("this is A"+str1);
+            case "B" -> System.out.println("this is B"+str1);
+            case "C" -> System.out.println("this is C"+str1);
+
+            // point 1
+        } // option shift click 다중 선택  + java version 12 이상
+    }
+    @Test
+    void test_ACII(){
+        char r = 'A';
+        System.out.println((int)r);
+
+        System.out.println(String.valueOf(r)+1);
+
+        System.out.println(Math.pow(5,3)); // 5*5*5
+
+        // point 2
+        MethodOverLoading methodOverLoading1 = new MethodOverLoading();
+
+        MethodOverLoading methodOverLoading2 = new MethodOverLoading("Hello");
+
+        //point 3
+        // Shorcut Make Main Method : psvm
+    }
 
 }
