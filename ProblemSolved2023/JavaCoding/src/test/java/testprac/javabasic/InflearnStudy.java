@@ -298,5 +298,10 @@ public class InflearnStudy {
         //point 3
         // Shorcut Make Main Method : psvm
     }
+    @Test
+    void sting_builder_test(){
+        // test for perfonce , sting builder and String clas
+        // test for scanner and sys io  buffer read
 
+    }
 }
