@@ -310,15 +310,79 @@ public class programmers0628 {
             return fib[n];
         }
     }
+    @Test
+    void sol9() {
+        String str = "4 1";
+        String[] given = str.split(" ");
+        int n = Integer.parseInt(given[0]);
+        int m = Integer.parseInt(given[1]);
 
-//    public int solution8(int n) {
-//        return (fib(n) % 1234567);
-//    }
-//    public int fib(int n){
-//        if(n == 0 ) return 0 ;
-//        if(n == 1 ) return 1;
-//        return fib(n - 1 ) + fib(n - 2);
-//    }
+        List<Integer> result = new ArrayList<>();
+        boolean[] visited = new boolean[ n + 1 ];
+
+        sol9dfs(n,m,result,visited) ;
+
+    }
+    private void sol9dfs(int n, int m, List<Integer> result, boolean[] visited) {
+        if(m == result.size()){
+            for( int  item : result) {
+                System.out.print(item + " ");
+            }
+            return;
+        }
+
+        for(int i = 0 ; i <=n ;i++) {
+            if(!visited[i]){
+                visited[i] = true;
+                result.add(i);
+                sol9dfs(n,m ,result,visited) ;
+                result.remove(result.size() -1 );
+                visited[i] = false;
+            }
+        }
+    }
+
+    int[][] graph =   {
+        {0, 0, 1, 1, 0}
+        ,{0, 0, 0, 1, 1}
+        ,{1, 1, 1, 1, 1}
+        ,{0, 0, 0, 0, 0}
+    };
+
+    int n = 4, m = 5;
+
+    @Test
+    public void iceCubeTest() {
+
+        // quest : 1 은 막혀있고 만들 수 있는 총 얼음의 개수
+        int res = 0 ;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                // 현재 위치에서 DFS 수행
+                if (iceDfs(i, j)) {
+                    res += 1;
+                }
+            }
+        }
+        System.out.println(res); // 정답 출력
+
+    }
+    public Boolean iceDfs(int x, int y ) {
+        // out of range
+        if (x <= -1 || x >=n || y <= -1 || y >= m) {
+            return false;
+        }
+        // recursion visit graph
+        if(graph[x][y] == 0 ) {
+            graph[x][y] = 1;
+            iceDfs(x - 1, y);
+            iceDfs(x, y - 1);
+            iceDfs(x + 1, y);
+            iceDfs(x, y + 1);
+            return true;
+        }
+        return false;
+    }
 }
 
 
