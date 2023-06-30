@@ -1,7 +1,5 @@
 package testprac.programmers;
 
-
-
 import java.util.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -9,9 +7,10 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
+public class Programmers0628 {
+    public Programmers0628(){
 
-import java.util.*;
-public class programmers0628 {
+    }
     public int[] parseIntegerList(String str) {
         str = str.replaceAll("\\[|\\]|\\s", "");
         String[] elements = str.split(",");
