@@ -207,13 +207,13 @@ public class Programmers0630 {
         if(!checkLeft(0,numbers,numbers[0],target)) {
             return 0;
         }
-        List<Integer> checkList = new ArrayList<>();
-        List<Integer> storeList = new ArrayList<>();
-        checkList.add(+numbers[0]);
-        checkList.add(-numbers[0]);
+        List<Long> checkList = new ArrayList<>();
+        List<Long> storeList = new ArrayList<>();
+        checkList.add((long)+numbers[0]);
+        checkList.add((long)-numbers[0]);
 
         for(int i =1 ; i< n -1 ;i++) {
-            for(Integer number: checkList) {
+            for(Long number: checkList) {
                 if(checkLeft(i,numbers,number,target)){
                     storeList.add(number+numbers[i]);
                     storeList.add(number-numbers[i]);
@@ -224,7 +224,7 @@ public class Programmers0630 {
             storeList.clear();
         }
 
-        for (Integer item : checkList) {
+        for (Long item : checkList) {
             if (item + numbers[n - 1] == target || item - numbers[n - 1] == target) {
                 answer++;
             }
@@ -232,7 +232,7 @@ public class Programmers0630 {
         return answer;
     }
 
-    public boolean checkLeft(int currentDepth, int[] numbers,int current,int target) {
+    public boolean checkLeft(int currentDepth, int[] numbers,long current,int target) {
 
         int leftTotal = 0;
         for(int i  = currentDepth ; i<numbers.length;i++) {

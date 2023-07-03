@@ -14,4 +14,25 @@ public class Parser {
 
         return re;
     }
+
+    public int[][] parseIntegerDoubleList(String sInfo) {
+        sInfo = sInfo.replaceAll("\\[\\s+", "[").replaceAll("\\s+]", "]");
+        String[] rows = sInfo.split("\\],\\s*\\[");
+        int numRows = rows.length;
+        int[][] numbers = new int[numRows][];
+
+        for (int i = 0; i < numRows; i++) {
+            String row = rows[i].replaceAll("\\[|\\]", "");
+            String[] elements = row.split(",\\s*");
+            int numElements = elements.length;
+            numbers[i] = new int[numElements];
+
+            for (int j = 0; j < numElements; j++) {
+                numbers[i][j] = Integer.parseInt(elements[j].trim());
+            }
+        }
+
+        return numbers;
+    }
+
 }
