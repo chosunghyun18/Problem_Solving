@@ -2,6 +2,9 @@ package testprac.programmers;
 
 import java.util.*;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 import testprac.javacoding.tool.Parser;
 
@@ -186,19 +189,14 @@ public class pg0704 {
 
         return count;
     }
-    public String solution(String[] participant, String[] completion) {
-        // size part max = 100,000
-
-        // ["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]
-
+    public String solution1(String[] participant, String[] completion) {
         String answer = "Error"; // 완주 s
         Map<String,Integer> participantName = new HashMap<>();
+
+        Map<String, Long> participantMap = Arrays.stream(participant).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
         for(String name : participant) {
-            if(!participantName.containsKey(name)){
-                participantName.put(name,1);
-            }else{
-                participantName.put(name,participantName.get(name)+1) ;
-            }
+            participantName.put(name,participantName.getOrDefault(name,0)+1);
         }
         for(String name:completion){
             int checkNumber =  participantName.get(name);
@@ -212,8 +210,76 @@ public class pg0704 {
         answer = String.join("", participantName.keySet());
         return answer;
     }
-}
+        //["mislav", "stanko", "mislav", "ana"]
+    public int solution2(int[] nums) {
+        int n = nums.length;
+        int pick = n/2;
 
+        Set<Integer> numbers = Arrays.stream(nums)
+            .boxed()
+            .collect(Collectors.toSet());
+        if(numbers.size() >= pick) return pick;
+
+        return numbers.size();
+    }
+    @Test
+    void sol1_test(){
+        String[] genres = {"classic", "pop", "classic", "classic", "pop"} ;
+        int[] plays =  {500, 600, 150, 800, 2500};
+        solution(genres,plays);
+    }
+
+    public int[] solution(String[] genres, int[] plays) {
+
+        // 장르 이름별 점수 합산 후 스트리밍 많은 순서로 이름 뽑기
+
+        Map<String,Integer> genresTotal = new HashMap<>();
+
+        for (int i = 0; i < genres.length; i++) {
+            String genre = genres[i];
+            int playsCount = genresTotal.getOrDefault(genre, 0);
+            genresTotal.put(genre, playsCount + plays[i]);
+        }
+
+        List<String> nameOrder = new ArrayList<>(genresTotal.keySet());
+        nameOrder.sort((genre1, genre2) -> genresTotal.get(genre2).compareTo(genresTotal.get(genre1)));
+
+        // 장르별 최대 아이템 2개
+        Map<String,List<int[]>> genreData = new LinkedHashMap<>();
+
+        for(int i = 0 ; i < genres.length ; i++){
+            String key = genres[i];
+            List<int[]> play ;
+            int[] record = {plays[i],i};
+            if(!genreData.containsKey(key)){
+                play = new ArrayList<>(Arrays.asList(record));
+            }else{
+                play =genreData.get(key);
+                play.add(record);
+
+                play.sort(Comparator.comparingInt((int[] arr) -> arr[0]).reversed());
+                if(play.size() == 3) play.remove(2);
+            }
+            genreData.put(key,play);
+        }
+
+        List<Integer>  ans = new ArrayList<>();
+
+        for(String key : nameOrder){
+            List<int[]> item = genreData.get(key);
+            if(item.size() == 2){
+                ans.add(item.get(0)[1]);
+                ans.add(item.get(1)[1]);
+            }else{
+                ans.add(item.get(0)[1]);
+            }
+        }
+
+        return ans.stream().mapToInt(Integer::intValue).toArray();
+    }
+
+
+}
 
 
 
