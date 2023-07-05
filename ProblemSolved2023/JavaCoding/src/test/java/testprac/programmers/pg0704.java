@@ -3,8 +3,13 @@ package testprac.programmers;
 import java.util.*;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
+import testprac.javacoding.tool.Parser;
 
 public class pg0704 {
+    private Parser pr;
+    public pg0704(){
+        pr = new Parser();
+    }
     @Test
     void test_sol1(){
         String given = "one4seveneight";
@@ -19,7 +24,7 @@ public class pg0704 {
 
         return Integer.parseInt(s);
     }
-    @Test
+
     void test_cache_sol() {
         String[] cities = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
         int cacheSize  = 3 ;
@@ -135,4 +140,94 @@ public class pg0704 {
 
         return  operationTime;
     }
+    @Test
+    public void test_code_3() {
+        int n = 6; // number of computers
+
+        String com = "[[1, 0, 1, 0, 0, 1], [0, 1, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0], [0, 0, 1, 1, 1, 0], [0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1]]";
+        int[][] computers = pr.parseIntegerDoubleList(com);
+
+        System.out.println("result >> " + sol4(n, computers));
+    }
+
+
+    @Test
+    public void test_code_2() {
+        int n = 3 ; // number of computer
+
+        String com = "[[1, 1, 0], [1, 1, 1], [0, 1, 1]]";
+        int[][] computers = pr.parseIntegerDoubleList(com);
+
+        System.out.println("result >> "+sol4(n,computers));
+    }
+
+    public int sol4(int n, int[][] computers) {
+        boolean[] visited = new boolean[n];
+
+        int count = 0 ;
+
+        Queue<int[]> q = new LinkedList<>();
+
+        for(int i = 0 ;i<n;i++) {
+            if(visited[i]) continue;
+            q.offer(computers[i]);
+            visited[i] = true;
+            while (!q.isEmpty()){
+                int[] way = q.poll();
+                for(int j = 0 ; j < n;j++){
+                    if(way[j] == 1 && !visited[j]){
+                        q.offer(computers[j]);
+                        visited[j] = true;
+                    }
+                }
+            }
+            count++;
+        }
+
+        return count;
+    }
+    public String solution(String[] participant, String[] completion) {
+        // size part max = 100,000
+
+        // ["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]
+
+        String answer = "Error"; // 완주 s
+        Map<String,Integer> participantName = new HashMap<>();
+        for(String name : participant) {
+            if(!participantName.containsKey(name)){
+                participantName.put(name,1);
+            }else{
+                participantName.put(name,participantName.get(name)+1) ;
+            }
+        }
+        for(String name:completion){
+            int checkNumber =  participantName.get(name);
+            if(checkNumber > 1) {
+                participantName.put(name,checkNumber - 1);
+                continue;
+            }
+            participantName.remove(name);
+        }
+
+        answer = String.join("", participantName.keySet());
+        return answer;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
