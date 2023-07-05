@@ -16,7 +16,7 @@ public class pg0705 {
     void sol_test1() {
         int[] arr1 = {0, 0, 55};
         int[] arr2 = {100, 1, 5};
-        solution(arr1,arr2);
+        solution1(arr1,arr2);
     }
 
     public int[] solution1(int []arr) {
@@ -31,7 +31,7 @@ public class pg0705 {
         return store.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    public int[] solution(int[] progresses, int[] speeds) {
+    public int[] solution1(int[] progresses, int[] speeds) {
         // [93, 30, 55]    ,    [1, 30, 5]    : [2, 1]
         // [95, 90, 99, 99, 80, 99]	 ,  [1, 1, 1, 1, 1, 1]  :  [1, 3, 2]
         int arrSize = progresses.length;
@@ -62,5 +62,27 @@ public class pg0705 {
 
         return ans.stream().mapToInt(Integer::intValue).toArray();
     }
+    @Test
+    void sol_test2() {
+        //22:09
+        String s = "()()";
+        solution(s);
+    }
+    boolean solution(String s) {
+        Deque<Character> stack = new LinkedList<>();
+        for (int i = 0; i < s.length(); i++) {
+            char item = s.charAt(i);
+            if (item == '(') {
+                stack.addLast(item);
+            } else {
+                if (stack.isEmpty() || stack.peekLast() != '(') {
+                    return false;
+                }
+                stack.removeLast();
+            }
+        }
 
+        return stack.isEmpty();
+    }
 }
+
