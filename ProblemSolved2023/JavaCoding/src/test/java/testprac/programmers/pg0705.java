@@ -66,9 +66,9 @@ public class pg0705 {
     void sol_test2() {
         //22:09
         String s = "()()";
-        solution(s);
+        solution11(s);
     }
-    boolean solution(String s) {
+    boolean solution11(String s) {
         Deque<Character> stack = new LinkedList<>();
         for (int i = 0; i < s.length(); i++) {
             char item = s.charAt(i);
@@ -84,5 +84,106 @@ public class pg0705 {
 
         return stack.isEmpty();
     }
+
+    @Test
+    void sol_test3() {
+        int[] pr = {1, 1, 9, 1, 1, 1};
+        int n = 0;
+        solution_others(pr,n);
+    }
+    public int solution(int[] priorities, int location) {
+
+        // index
+
+        Deque<List<Integer>> deque = new LinkedList<>();
+
+        int[] checkP= new int[10];
+
+        int  count = 1 ;
+
+
+        for(int i = 0 ; i < priorities.length ;i++) {
+
+            checkP[priorities[i]] += 1 ; // count
+
+            List<Integer> item = new ArrayList<>();
+            item.add(i);
+            item.add(priorities[i]);
+            deque.add(item);
+        }
+        //item : index : prior
+        while(!deque.isEmpty()){
+            List<Integer> item = deque.poll();
+            int pri = item.get(1);
+            int index = item.get(0);
+            boolean flag = false;
+
+            for(int i = pri + 1 ;i < 10;i++)
+            {
+                if(checkP[i] > 0) {
+                    deque.add(item);
+                    checkP[pri]+=1;
+                    count--;
+                    flag = false;
+                    break;
+                }
+                flag = true;
+            }
+
+            if(flag) {
+                if(index == location) {
+                    return count;
+                }
+            }
+            checkP[pri]-=1;
+            count++;
+        }
+
+        return count;
+    }
+
+    public int solution_others(int[] priorities, int location) {
+        int answer = 1;
+        PriorityQueue<Integer> p = new PriorityQueue<>(Collections.reverseOrder());
+
+        for(int i=0; i<priorities.length; i++){
+            p.add(priorities[i]);
+            System.out.println(p);
+        }
+        System.out.println(p);
+
+        while(!p.isEmpty()){
+            for(int i=0; i<priorities.length; i++){
+                if(priorities[i] == p.peek()){
+                    if(i == location){
+                        return answer;
+                    }
+                    p.poll();
+                    answer++;
+                }
+            }
+        }
+
+        return answer;
+    }
+    @Test
+    void sol_test_11(){
+        PriorityQueue<Integer> p = new PriorityQueue<>();
+        p.add(10);
+        p.add(15);
+        p.add(16);
+        p.add(300);
+        System.out.println(p.peek()); // re : 10
+
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        pq.add(10);
+        pq.add(15);
+        pq.add(16);
+        pq.add(300);
+        System.out.println(pq.peek()); // re : 16
+    }
 }
+
+
 
