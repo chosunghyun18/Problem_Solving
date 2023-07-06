@@ -95,7 +95,7 @@ public class pg0706 {
             System.out.println(item);
         }
     }
-    public int solution(int[] A, int[] B)
+    public int solution13(int[] A, int[] B)
     {
         int answer = 0;
         Arrays.sort(A);
@@ -110,9 +110,35 @@ public class pg0706 {
     public void sol_test12() {
         int[] arr1 = {1, 4, 2};
         int[] arr2 = {5, 4, 4};
-        solution(arr1,arr2);
+        solution13(arr1,arr2);
     }
+    @Test
+    public void sol_test14() {
+        String s = "110010101001";
+        solution(s);
+    }
+    public int[] solution(String s) {
+        int[] answer = new int[2];
+        int numZero = 0 ;
+        int numChanged = 0;
+        while(!s.equals("1"))
+        {   numChanged++;
+            String[] sarr = s.split("");
+            for(String digit : sarr) {
+                if(digit.equals("0")) numZero++;
+            }
+            s = s.replaceAll("0","");
+            int convreted = s.length();
+            s = Integer.toBinaryString(convreted);
+        }
 
+        answer[0] = numChanged;
+        answer[1] = numZero;
+
+        System.out.println(numChanged);
+        System.out.println(numZero);
+        return answer;
+    }
 
 }
 
