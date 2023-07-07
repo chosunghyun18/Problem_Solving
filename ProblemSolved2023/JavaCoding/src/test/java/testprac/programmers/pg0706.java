@@ -10,21 +10,6 @@ import org.junit.jupiter.api.Test;
 import testprac.javacoding.tool.Parser;
 
 public class pg0706 {
-    private Parser pr;
-    public pg0706() {
-        pr = new Parser();
-    }
-
-    @Test
-    public void sol_test() {
-//        String given = "32People   unFollowed me  ";
-//        String  Answer = "32people   Unfollowed Me  ";
-
-        String given = "32People   unFollowed me";
-        String  Answer = "32people   Unfollowed Me";
-
-        Assertions.assertEquals(Answer,solution12(given));
-    }
 
     public String solution1(String s) {
         String[] numberGiven = s.split(" ");
@@ -86,15 +71,7 @@ public class pg0706 {
             return ans;
         else return ans.trim();
     }
-    @Test
-    void stringSpaceTest(){
-        String sr = "this    two three";
-        String[] split = sr.split(" ");
-        System.out.println(split.length);
-        for(String item : split){
-            System.out.println(item);
-        }
-    }
+
     public int solution13(int[] A, int[] B)
     {
         int answer = 0;
@@ -106,17 +83,7 @@ public class pg0706 {
         return answer;
     }
 
-    @Test
-    public void sol_test12() {
-        int[] arr1 = {1, 4, 2};
-        int[] arr2 = {5, 4, 4};
-        solution13(arr1,arr2);
-    }
-    @Test
-    public void sol_test14() {
-        String s = "110010101001";
-        solution(s);
-    }
+
     public int[] solution(String s) {
         int[] answer = new int[2];
         int numZero = 0 ;

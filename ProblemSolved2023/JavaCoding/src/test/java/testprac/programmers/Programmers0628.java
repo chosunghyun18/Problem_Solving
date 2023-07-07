@@ -1,10 +1,6 @@
 package testprac.programmers;
 
 import java.util.*;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class Programmers0628 {
@@ -24,14 +20,6 @@ public class Programmers0628 {
         return re;
     }
 
-    @Test
-    void sol3(){
-
-        String[] park = {"SOO","OXX","OOO"};
-        String[] routes ={"E 2","S 2","W 1"};
-
-        System.out.println(Arrays.toString(sol3(park,routes)));
-    }
     public int[] sol3(String[] park, String[] routes) {
         int[] answer = new int[2];
         int sx = 0;
@@ -81,22 +69,6 @@ public class Programmers0628 {
         answer[1] = sx;
         return answer;
     }
-
-    @Test
-    void sol5(){
-
-        int n = 8;
-        int a = 4;
-        int b = 7;
-        int re = solution5(n,a,b);
-        Assertions.assertEquals(3,re);
-
-        n = 6;
-        a = 1;
-        b = 2;
-        re = solution5(n,a,b);
-        Assertions.assertEquals(1,re);
-    }
     public int solution5(int n, int a, int b) {
         int answer = 0 ;
         //  2 로 나눈 몫 + 나머지 = 다음 그룹
@@ -124,34 +96,6 @@ public class Programmers0628 {
 
         }
         return answer;
-    }
-    @Test
-    void sol6(){
-
-        int brown = 10;
-
-        int yellow = 2 ;
-
-        int[] re = solution6(brown,yellow);
-
-        String str = "[4, 3]";
-
-        int[] ans = parseIntegerList(str);
-
-        assertThat(ans).containsExactly(re);
-
-        brown = 8;
-
-        yellow = 1 ;
-
-        re = solution6(brown,yellow);
-
-        str = "[3, 3]";
-
-        ans = parseIntegerList(str);
-
-        assertThat(ans).containsExactly(re);
-
     }
     public int[] solution6(int brown, int yellow) {
         int [] answer = new int[2];
@@ -182,17 +126,7 @@ public class Programmers0628 {
 
         return answer;
     }
-    @DisplayName("next int")
-    @Test
-    void sol7(){
-//        int n = 78;
-//        int re = solution7(n);
-//        Assertions.assertEquals(83,re);
 
-        int n = 15;
-        int re = solution7(n);
-        Assertions.assertEquals(23,re);
-    }
     public int solution7Brutal(int n) {
         int answer = 0 ;
         int flag = 0 ;
@@ -287,13 +221,6 @@ public class Programmers0628 {
         }
         return n;
     }
-    @Test
-    void sol8(){
-        int n = 3;
-        Assertions.assertEquals(2,solution8(n));
-        n = 5;
-        Assertions.assertEquals(5,solution8(n));
-    }
     public int solution8(int n) {
         int[] fib = new int[ n + 1];
         fib[0] = 0 ;
@@ -308,19 +235,6 @@ public class Programmers0628 {
             }
             return fib[n];
         }
-    }
-    @Test
-    void sol9() {
-        String str = "4 1";
-        String[] given = str.split(" ");
-        int n = Integer.parseInt(given[0]);
-        int m = Integer.parseInt(given[1]);
-
-        List<Integer> result = new ArrayList<>();
-        boolean[] visited = new boolean[ n + 1 ];
-
-        sol9dfs(n,m,result,visited) ;
-
     }
     private void sol9dfs(int n, int m, List<Integer> result, boolean[] visited) {
         if(m == result.size()){
@@ -350,22 +264,6 @@ public class Programmers0628 {
 
     int n = 4, m = 5;
 
-    @Test
-    public void iceCubeTest() {
-
-        // quest : 1 은 막혀있고 만들 수 있는 총 얼음의 개수
-        int res = 0 ;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                // 현재 위치에서 DFS 수행
-                if (iceDfs(i, j)) {
-                    res += 1;
-                }
-            }
-        }
-        System.out.println(res); // 정답 출력
-
-    }
     public Boolean iceDfs(int x, int y ) {
         // out of range
         if (x <= -1 || x >=n || y <= -1 || y >= m) {

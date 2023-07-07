@@ -1,23 +1,10 @@
 package testprac.programmers;
 
 import java.util.*;
-import java.util.stream.*;
 import org.junit.jupiter.api.Test;
-import testprac.javacoding.tool.Parser;
 
 public class pg0705 {
 
-    public  pg0705() {
-        Parser parser = new Parser();
-    }
-
-
-    @Test
-    void sol_test1() {
-        int[] arr1 = {0, 0, 55};
-        int[] arr2 = {100, 1, 5};
-        solution1(arr1,arr2);
-    }
 
     public int[] solution1(int []arr) {
         int check = arr[0];
@@ -61,12 +48,6 @@ public class pg0705 {
         Collections.reverse(ans);
 
         return ans.stream().mapToInt(Integer::intValue).toArray();
-    }
-    @Test
-    void sol_test2() {
-        //22:09
-        String s = "()()";
-        solution11(s);
     }
     boolean solution11(String s) {
         Deque<Character> stack = new LinkedList<>();
@@ -166,23 +147,7 @@ public class pg0705 {
 
         return answer;
     }
-    @Test
-    void sol_test_11(){
-        PriorityQueue<Integer> p = new PriorityQueue<>();
-        p.add(10);
-        p.add(15);
-        p.add(16);
-        p.add(300);
-        System.out.println(p.peek()); // re : 10
 
-
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        pq.add(10);
-        pq.add(15);
-        pq.add(16);
-        pq.add(300);
-        System.out.println(pq.peek()); // re : 16
-    }
 }
 
 

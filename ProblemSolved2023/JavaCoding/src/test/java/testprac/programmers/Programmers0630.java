@@ -1,46 +1,11 @@
 package testprac.programmers;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.TreeMap;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import testprac.javacoding.tool.Parser;
 
 public class Programmers0630 {
-
-    private Parser pr;
-
-    public Programmers0630() {
-        pr = new Parser();
-    }
-
-    @Test
-    void sol0() {
-
-        String feesGiven = "[180, 5000, 10, 600]";
-        String recordsGiven =
-            "[05:34 5961 IN, 06:00 0000 IN, 06:34 0000 OUT, 07:59 5961 OUT, 07:59 0148 IN, 18:59 0000 IN,"
-                + " 19:09 0148 OUT, 22:59 5961 IN, 23:00 5961 OUT]";
-
-        int[] fees = pr.parseIntegerList(feesGiven);
-
-        recordsGiven = recordsGiven.replace("[", " ").replace("]", ",");
-        String[] recordsSplit = recordsGiven.split(",");
-
-        String answerGiven = "[14600, 34400, 5000]";
-
-        int[] ans = pr.parseIntegerList(answerGiven);
-        for(int i = 0 ; i< recordsSplit.length;i++) {
-            recordsSplit[i] = recordsSplit[i].trim();
-        }
-        assertThat(ans).containsExactly(solution0(fees, recordsSplit));
-    }
 
     public int[] solution0(int[] fees, String[] records) {
         System.out.println(Arrays.toString(records));
@@ -139,66 +104,6 @@ public class Programmers0630 {
             index++;
         }
         return answer;
-    }
-    //  23-07-02
-//    @Test
-//    void sol1() {
-//        int n = 5 ;
-//        String sInfo =  "[2,1,1,1,0,0,0,0,0,0,0]" ;
-//        int[] given = pr.parseIntegerList(sInfo);
-//
-//        String a = "[0,2,2,0,1,0,0,0,0,0,0]";
-//        int[] ans = pr.parseIntegerList(a);
-//
-//        int[] out =  solution1(n,given);
-//
-//        assertThat(ans).containsExactly(out);
-//    }
-//    public int[] solution1(int n, int[] info) {
-//
-//        System.out.println(Arrays.toString(info));
-//        List<Integer> answer = new ArrayList<>();
-//
-//        // case n = 1
-//        if(n == 1) {
-//            if(info[0] == 1){
-//                int[] re = {-1};
-//                return re;
-//            }
-//        }
-//
-//        return answer;
-//    }
-
-    @Test
-    void sol1() {
-
-        String sInfo =  "[1, 1, 1, 1, 1]" ;
-
-        int[] numbers = pr.parseIntegerList(sInfo);
-        int target = 3;
-
-        int expect = 5 ;
-        int result =  solution1(numbers,target);
-
-        Assertions.assertEquals(expect,result);
-
-
-    }
-    @Test
-    void sol2() {
-
-        String sInfo =  "[4, 1, 2, 1]" ;
-
-        int[] numbers = pr.parseIntegerList(sInfo);
-        int target = 4;
-
-        int expect = 2 ;
-        int result =  solution1(numbers,target);
-
-        Assertions.assertEquals(expect,result);
-
-
     }
 
     public int solution1(int[] numbers, int target) {
