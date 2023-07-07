@@ -1,9 +1,11 @@
 package testprac;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.stream.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
-import java.io.*;
+import java.util.stream.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -51,7 +53,7 @@ public class GrammarSkillsTest {
 
         int[] answer = {1,2,3,4,5};
         List<Integer> arr = new ArrayList<>(Arrays.stream(answer).boxed().collect(Collectors.toList()));
-        List<Integer> answerToListInt = Arrays.stream(answer).boxed().toList();
+        List<Integer> answerToListInt = Arrays.stream(answer).boxed().collect(Collectors.toList());
 
         Assertions.assertThat(arr).isEqualTo(answerToListInt);
     }
