@@ -2,9 +2,11 @@ package testprac.programmers;
 
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -118,10 +120,11 @@ public class pg0707 {
     }
     @Test
     void sol5(){
-        int[][] given = {{0, 3}, {1, 9}, {2, 6}};
-        solution(given);
+        int[][] given = {{0, 3}, {1, 9}, {2, 6}, {1, 7}, {3, 6}, {4, 5}, {2, 6}};
+//        int[][] given = {{0, 3}, {1, 9}, {2, 6}};
+        solution5(given);
     }
-    public int solution(int[][] jobs) {
+    public int solution5(int[][] jobs) {
 
         int sumTime = 0;
         int numTask = jobs.length;  // > 0
@@ -134,12 +137,13 @@ public class pg0707 {
         PriorityQueue<int[]> queue =  new PriorityQueue<>(Comparator.comparingInt(o -> o[1]));
         while (count < numTask) {
             while(jobIdx < numTask && jobs[jobIdx][0] <= currentTime){
-                queue.add(jobs[jobIdx++]);
+                queue.add(jobs[jobIdx]);
+                jobIdx++;
             }
             if(queue.isEmpty()){
                 currentTime = jobs[jobIdx][0];
             }else{
-                int[] tmp = queue.peek();
+                int[] tmp = queue.poll();
                 sumTime += (tmp[1] + currentTime) - tmp[0];
                 currentTime += tmp[1];
                 count++;
@@ -148,6 +152,42 @@ public class pg0707 {
 
         return (int) Math.floor(sumTime/numTask);
     }
+    @Test
+    void sol6(){
+     int[][] given = {{7}, {3, 8}, {8, 1, 0},{2, 7, 4, 4}, {4, 5, 2, 6, 5}};
+ //       int[][] given = {{0}, {0, 0}, {0, 0, 0},{0, 0, 0, 0}};
+        System.out.println(solution(given));
+    }
+
+    public int solution(int[][] triangle) {
+        if(triangle.length == 1 )  return triangle[0][0];
+        if(triangle.length == 2 )  return Math.max(triangle[0][0] + triangle[1][0] ,triangle[0][0] + triangle[1][1]) ;
+
+        List<Integer> tmp = new ArrayList<>();
+        tmp.add(triangle[0][0] + triangle[1][0]);
+        tmp.add(triangle[0][0] + triangle[1][1]);
+        for(int i = 2 ; i < triangle.length ; i++) {
+            List<Integer> sortResult = new ArrayList<>() ;
+            for(int j = 0 ; j < triangle[i].length;j++){
+                if(j == 0) {
+                    int givenh = tmp.get(0);
+                    sortResult.add(triangle[i][0]+givenh);
+                } else if (j == triangle[i].length -1) {
+                    int givenl = tmp.get(tmp.size()-1);
+                    sortResult.add(triangle[i][i-1]+givenl);
+                }else{
+                    int givenR = tmp.get(j-1);
+                    int givenL = tmp.get(j);
+                    sortResult.add(Math.max(givenR,givenL) + triangle[i][j]);
+
+                }
+            }
+            tmp = sortResult;
+        }
+
+        return tmp.stream().max(Comparator.naturalOrder()).orElse(0);
+    }
+
 
 }
 
