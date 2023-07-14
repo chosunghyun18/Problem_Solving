@@ -36,28 +36,52 @@ public class pg0709 {
     void solw4(){
         int[]  works = {4, 3, 3};
         int n = 4 ;
-        solution(n,works);
+        solution1(n,works);
     }
-    public long solution(int n, int[] works) {
+    public long solution1(int n, int[] works) {
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());;
         for (int work : works) {
-            pq.add(work);
+            pq.offer(work);
         }
-        int index = n ;
-        while (index > 0) {
+
+        for(int i =0 ; i< n ;i++){
             int item = pq.poll();
             if(item <= 0 ) return  0;
-            item-=1;
-            pq.add(item);
-            index--;
+            pq.offer(item -1 );
         }
-        int answr = 0 ;
+
+        long answr = 0 ;
         while(!pq.isEmpty()){
-            int item = pq.poll();
-            answr +=(item)*(item);
+            answr += Math.pow(pq.poll(),2);
         }
         return  answr;
     }
+    @Test
+    void stringSubTes() {
+        String given = "012345" ;
 
+        String[] givearr = given.split("");
+        int index = 1 ;
+        String tmp = "";
+        for(String item :givearr ){
+            tmp+=item;
+        }
+        tmp = tmp.substring(0,index) + tmp.substring(index+1);
+          //  this is get String in range
+        System.out.println(tmp);
+
+    }
+    @Test
+    void sol5(){
+        //size = 3~ 10^6
+        int[] money ={1,2,3,1}; // 4 개의 집이 원형구조 , 0~1000 , 정수
+    }
+    public int solution(int[] money) {
+        // 인접한 두 집을 털지 앟고 최대 돈을 훔치기
+
+        int answer = 0;
+
+        return answer;
+    }
 
 }
