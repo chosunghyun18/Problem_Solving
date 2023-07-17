@@ -1,5 +1,8 @@
 package testprac.programmers;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Stack;
 import org.junit.jupiter.api.Test;
 import testprac.javacoding.TestObject;
@@ -14,11 +17,7 @@ public class pg0712 {
         System.out.println(testObject.getNumber());
 
     }
-    @Test
-    void sol_2() {
-        String given = "baabaa";
-        int an = solution(given);
-    }
+
 
     public int solution1(String s) {
         int answer = 0 ;
@@ -46,7 +45,7 @@ public class pg0712 {
         return answer;
     }
 
-    public int solution(String s) {
+    public int solution1_1(String s) {
         Stack<Character> stack = new Stack<>();
 
         for (char c : s.toCharArray()) {
@@ -59,6 +58,50 @@ public class pg0712 {
 
         return stack.isEmpty() ? 1 : 0;
     }
+
+    @Test
+    void sol_2() {
+        int n = 2 ;
+        String[] words =  {"hello", "one", "even", "never", "now", "world", "draw"} ;
+        System.out.println(
+            Arrays.asList(solution(n,words))
+        );
+
+    }
+
+    public int[] solution(int n, String[] words) {
+        List<List<String>>  people = new ArrayList<>();
+        //make grid
+        for(int i = 0 ;i  < n ; i++){
+            List<String> tmp  = new ArrayList<>();
+            people.add(tmp);
+        }
+        int [] answer =new int [2];
+
+        people.get(0).add(words[0]);
+        // init
+        int flag = 0 ;
+        int flagIndex = 0 ;
+        for(int i = 1 ; i < words.length ; i++){
+            int index = n % i  ;
+            List<String> tmp  =  people.get(index);
+            String check =  words[i] ;
+
+            if(check.toCharArray()[check.length()-1] == words[i-1].toCharArray()[0]){
+
+            }
+            else{
+                flag = i;
+                flagIndex = index;
+                break ;
+            }
+        }
+
+        answer[0] = flag;
+        answer[1] = flagIndex;
+        return answer;
+    }
+
 
 }
 
