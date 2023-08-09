@@ -97,6 +97,116 @@ public class lg0808 {
     public List<List<String>> groupAnagrams(String[] strs) {
         return new ArrayList<>();
     }
+    @Test
+    public void void_product_self(){
+        int[] n = {-1,1,0,-3,3} ;
+        System.out.println(Arrays.toString(productExceptSelf(n)));
+    }
+    public int[] productExceptSelf(int[] nums) {
+        int n = nums.length ;
+        List<Integer> index  = new ArrayList<>();
+        int pro = 1 ;
+        for(int i = 0 ; i <  n ; i++) {
+            if(nums[i] == 0 ) index.add(i) ;
+            if(nums[i] != 0) pro *= nums[i] ;
+        }
+
+        if(index.size()  > 1) {
+            return new int[n] ;
+        }
+
+        if(index.size() == 1) {
+            Arrays.fill(nums,0);
+            nums[index.get(0)] = pro;
+            return nums ;
+        }
+
+        for(int i = 0 ; i <  n ; i++) {
+            nums[i] = pro / nums[i] ;
+        }
+        return nums ;
+
+    }
+
+    @Test
+    public void sudoku_Test() {
+        char[][] b = {
+            {'.','.','.','.','.','.','5','.','.'},
+            {'.','.','.','.','.','.','.','.','.'},
+            {'.','.','.','.','.','.','.','.','.'},
+            {'9','3','.','.','2','.','4','.','.'},
+            {'.','.','7','.','.','.','3','.','.'},
+            {'.','.','.','.','.','.','.','.','.'},
+            {'.','.','.','3','4','.','.','.','.'},
+            {'.','.','.','.','.','3','.','.','.'},
+            {'.','.','.','.','.','5','2','.','.'}
+        };
+        System.out.println(isValidSudoku(b));
+
+    }
+
+    public boolean isValidSudoku(char[][] board) {
+        // loop  row check
+        for(char[] line :board) {
+            if(isRowDuplicate(line)) return false;
+        }
+        // loop column check
+
+        for(int i = 0 ; i < 9 ;i++) {
+            Map<Character , Integer> map = new HashMap<>();
+            for(int j = 0 ; j < 9 ; j++) {
+                char item = board[j][i];
+                if(item== '.') continue;
+                if(map.containsKey(item)) {
+                    return false;
+                }
+                else {
+                    map.put(item,0);
+                }
+            }
+        }
+
+        // loop  3 boxed check
+        if(isBoxDuplicate(board)) return false;
+        return true;
+    }
+
+    private boolean isBoxDuplicate(char[][] board) {
+        for (int s = 0; s < 7; s = s + 3) {
+            int count = 0 ;
+            Map<Character, Integer> map = new HashMap<>();
+            for (int j = 0; j < 9 ; j++) {
+                for (int i = s; i < s + 3; i++) {
+                    count++;
+                    if(count > 9) {
+                        count = 1;
+                        map = new HashMap<>();
+                    }
+                    char item = board[j][i];
+                    if (item == '.')
+                        continue;
+                    if (map.containsKey(item))
+                        return true;
+                    map.put(item, 0);
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean isRowDuplicate(char[] list){
+        Map<Character , Integer> map = new HashMap<>();
+        for(char item : list) {
+            if(item == '.') continue;
+            if(map.containsKey(item)) {
+                return true;
+            }
+            else {
+                map.put(item,0);
+            }
+        }
+        return false;
+    }
 }
 
 
