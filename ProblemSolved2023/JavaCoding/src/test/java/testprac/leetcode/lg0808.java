@@ -207,6 +207,38 @@ public class lg0808 {
         }
         return false;
     }
+    @Test
+    public void test_longet(){
+        int[] nums =    {-6,-1,-1,9,-8,-6,-6,4,4,-3,-8,-1};
+        longestConsecutive(nums);
+    }
+
+    public int longestConsecutive(int[] nums) {
+        Arrays.sort(nums);
+        List<Integer> arr = Arrays.stream(nums).
+                distinct().
+                boxed().
+                collect(Collectors.toList());
+        int maxC = 0 ;
+        int co = 0 ;
+        if(nums.length == 0 ) return 0 ;
+        if(nums.length == 1 || arr.size() ==1 ) return 1 ;
+
+
+        int past = nums[0] ;
+        for(int item : arr){
+            past++;
+            if(item == past) {
+                co++ ;
+                maxC = Math.max(co,maxC);
+            }else{
+                co = 1;
+            }
+            past = item;
+        }
+        if(maxC == 0) return 1;
+        return maxC ;
+    }
 }
 
 
