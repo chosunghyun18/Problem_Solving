@@ -118,5 +118,36 @@ public class pg0816 {
             return visitA(cards[position]-1,count);
         }
     }
+    @Test
+    void longest_String_search()
+    {
+        String s = "abacde"; // 3
+        solution(s);
+    }
+    public int solution(String s)
+    {
+        int count = 1 ;
+        List<Integer> answ = new ArrayList();
+        for(int i = 0 ; i < s.length() ; i++) {
+            boolean flag = false ;
+            while(!flag) {
+                if(i-count != -1 && i+count < s.length()){
+                    if(s.charAt(i-count) == s.charAt(i+count)) {
+                        count++;
+                    }else{
+                        answ.add(count);
+                        count = 1;
+                        flag = true;
+                    }
+                }else{
+                    flag = true;
+                }
+            }
+            answ.add(count);
+            count = 1;
+        }
+        answ.sort((a,b) -> b-a);
+        return (answ.get(0)*2 -1);
+    }
 
 }
