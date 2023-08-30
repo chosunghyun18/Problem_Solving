@@ -1,10 +1,17 @@
 package testprac.programmers;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
 public class pg0829 {
@@ -93,14 +100,14 @@ public class pg0829 {
         for(int i = checkIndex ; i<checkIndex+5 ; i++){
             if(i == minerals.length) return re;
             Character c = minerals[i].charAt(0);
-            if(pick == 0){
+            if(pick == 0) {
                 re+=1;
             }
-            if(pick == 1){
+            if(pick == 1) {
                 if(c=='d') re+=5;
                 if(c!='d') re+=1;
             }
-            if(pick == 2){
+            if(pick == 2) {
                 if(c=='d') re+=25;
                 if(c=='i') re+=5;
                 if(c=='s') re+=1;
@@ -109,4 +116,79 @@ public class pg0829 {
         return re;
     }
 
+    @Test
+    public void c(){
+        solution();
+    }
+
+
+
+
+    List<Integer> numbers = new ArrayList();
+    public int solution() {
+        String[][] clothes = {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}} ;
+        int ans = 0 ;
+        List<Integer> numbers = new ArrayList();
+        Map<String,Integer> map = new HashMap<>();
+        Set<String> keys = new HashSet<>();
+        for(String[] cloth : clothes){
+            String clothType = cloth[1];
+            map.put(clothType,map.getOrDefault(clothType,0)+1);
+            keys.add(clothType);
+        }
+        List<String> keyArr = keys.stream().collect(Collectors.toList());
+        System.out.println(map);
+        int count = keys.size() -1 ;
+        ans = 0 ;
+        int multiple  = 1 ;
+
+        if(keys.size() == 1) return map.get(keyArr.get(0));
+        else{
+            while (count != -1){
+                String key = keyArr.get(count);
+                numbers.add(map.get(key));
+                count--;
+            }
+        }
+        int n = numbers.size() ;
+        List<List<Integer>> combinations = new ArrayList<>();
+        combine(n,1,new ArrayList<>(),combinations);
+        for(List<Integer> combination : combinations) {
+            int tmp = 1 ;
+            for(Integer item : combination){
+                tmp *= numbers.get(item-1);
+            }
+            ans+=tmp;
+        }
+        System.out.println(ans);
+        return ans;
+    }
+    public void combine(int n , int start  , List<Integer> current , List<List<Integer>> combinations) {
+        if(!current.isEmpty()) {
+            combinations.add(new ArrayList<>(current));
+        }
+        for(int i = start ; i <= n; i++) {
+            current.add(i);
+            combine(n,i+1,current,combinations);
+            current.remove(current.size() -1);
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
