@@ -1,13 +1,12 @@
 package testprac;
 
 import java.io.*;
-import java.util.*;
 
-public class Main {
+public class Main<T> {
     public static void main(String[] args) throws IOException{
-        testSame();
     }
-    private static void testSame(){
+
+    private <T> Main() {
         String str1 ="ABC";
 //        String str2 ="ABC";
         String str2 ="CAB";
