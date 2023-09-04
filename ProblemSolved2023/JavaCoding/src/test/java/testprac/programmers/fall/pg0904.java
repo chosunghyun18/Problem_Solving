@@ -46,7 +46,7 @@ public class pg0904 {
 
             System.out.println(arr);
 
-            Collections.sort(arr,(a,b)->{
+            arr.sort((a,b)->{
                 if(a.get(0) == b.get(0)) return b.get(1)  - a.get(1);
                 return  a.get(0)- b.get(0);
             });
@@ -55,16 +55,36 @@ public class pg0904 {
         @Test
         void sorting_test_for_java(){
             List<Integer> arr = new ArrayList<>();
-            arr.add(1);
             arr.add(5);
+            arr.add(4);
             arr.add(1);
             arr.add(5);
             arr.add(18);
             arr.add(8);
-            bubble_sorting_test(arr);    // change each nearby  : make max or min to push all in one
-            selection_sorting_test(arr);  // find max or min to sort it
+            bubble_sorting_test(arr);    // 인접 한 값들을 비교 , 가장 큰값을  오른쪽에 전부 shift
+            selection_sorting_test(arr);  // find  min or max  n ,n-1 ,,, and  change index
+            insertion_sorting_test(arr);  // find  값 비교 , 왔던길 , 변경 없으면 멈춤
         }
 
+               /*
+                 탐색 하고자 하는 인덱스를 선택 , 왔던 길에 있는 것들 모두 스왑
+                */
+    private void insertion_sorting_test(List<Integer> arr) {
+         ; //  push min in left side  ,,          5 , 4, 1 ,2
+        for(int i  = 1 ; i < arr.size() ; i++ ) {
+            for(int j = i ; j -1 >-1 ; j--) {
+                if(arr.get(j) < arr.get(j-1)){
+                    int tmp = arr.get(j-1);
+                    arr.set(j-1,arr.get(j));
+                    arr.set(j,tmp);
+                }else {
+                    break;
+                }
+            }
+        }
+        System.out.println(arr);
+    }
+    //   tmp = a .    a = b, b = tmp
     private void selection_sorting_test(List<Integer> arr) {
 
             for(int j = 0; j <arr.size() -1 ; j++){
@@ -97,9 +117,46 @@ public class pg0904 {
             }
         System.out.println(arr);
     }
+    @Test
+    void sorting_test_for_java_fast() {
+        List<Integer> arr = new ArrayList<>();
+        arr.add(1);
+        arr.add(5);
+        arr.add(1);
+        arr.add(5);
+        arr.add(18);
+        arr.add(8);
+        quick_sort(arr);
+        double_quick_sort(arr);
+        merge_sort(arr);
+        tim_sorlt(arr);
+    }
+    private void double_quick_sort(List<Integer> arr) {
+
+    }
+    private void quick_sort(List<Integer> arr) {
+
+    }
+    private void tim_sorlt(List<Integer> arr) {
+
+    }
 
 
 
+    private void merge_sort(List<Integer> arr) {
+
+    }
+    @Test
+    void brak_test(){  // brak 는 조건문이 있는 loop 를 break 한다.
+
+        for(int i =0 ; i < 5  ; i++){
+            System.out.println("this is I: " + i);
+            for(int j = 0 ; j < 6 ; j++){
+                System.out.println(j);
+                if(j == 4) break;
+            }
+        }
+    }
 
 }
 
