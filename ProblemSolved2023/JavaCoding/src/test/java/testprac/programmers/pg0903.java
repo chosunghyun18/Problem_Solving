@@ -79,5 +79,52 @@ public class pg0903 {
 
         return answer;
     }
+    @Test
+    public void stack_test(){
+        String s = "{[]}";
+        System.out.println(isValid(s));
+    }
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack() ;
+        int n = s.length() ;
+        stack.add(s.charAt(0));
+        for(int i = 1  ;i < n ;i++){
+            char check = (char)s.charAt(i);
+            if(!stack.isEmpty()){
+                char stored = stack.peek();
+                if (check == ')'){
+                    if(stored == '('){
+                        stack.pop();
+                        continue;
+                    }else{
+                        return false;
+                    }
+                }else if(check == '}'){
+                    if(stored == '{'){
+                        stack.pop();
+                        continue;
+                    }else{
+                        return false;
+                    }
+                }else if(check == ']'){
+                    if(stored == '['){
+                        stack.pop();
+                        continue;
+                    }else{
+                        return false;
+                    }
+                }else{
+                    stack.add(check);
+                }
+            }else{
+                stack.add(check);
+            }
+
+        }
+        if(stack.isEmpty()){
+            return true ;
+        }
+        return false ;
+    }
 
 }
