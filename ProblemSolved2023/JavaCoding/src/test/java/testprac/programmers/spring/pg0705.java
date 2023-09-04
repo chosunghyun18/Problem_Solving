@@ -1,4 +1,4 @@
-package testprac.programmers;
+package testprac.programmers.spring;
 
 import java.util.*;
 import org.junit.jupiter.api.Test;

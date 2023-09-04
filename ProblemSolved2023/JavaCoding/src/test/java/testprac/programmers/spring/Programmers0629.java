@@ -1,4 +1,4 @@
-package testprac.programmers;
+package testprac.programmers.spring;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

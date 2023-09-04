@@ -1,4 +1,4 @@
-package testprac.programmers;
+package testprac.programmers.spring;
 
 public class pg0819 {
     public void bills(){

@@ -1,4 +1,4 @@
-package testprac.programmers;
+package testprac.programmers.spring;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;

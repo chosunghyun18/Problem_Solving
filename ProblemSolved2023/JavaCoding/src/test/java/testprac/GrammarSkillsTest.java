@@ -18,7 +18,7 @@ public class GrammarSkillsTest {
         int [] arr2 = new int[5]; // [0,0,0,0]
         int [] arr3 = new int[10];
         HashMap map = new HashMap();
-        Arrays.fill(arr3,10); // [10,10,10,,,]
+        Arrays.fill(arr3,10); // [10,10,10,,,]qwq
 
         System.out.println(Arrays.stream(arr2)
                         .boxed()

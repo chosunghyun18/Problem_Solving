@@ -1,4 +1,4 @@
-package testprac.programmers;
+package testprac.programmers.spring;
 
 import java.util.ArrayList;
 import java.util.Arrays;
