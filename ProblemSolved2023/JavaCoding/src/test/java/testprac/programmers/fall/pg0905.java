@@ -90,18 +90,57 @@ public class pg0905 {
         return answer;
     }
     @Test
-    public void ballon_test(){
+    public void ballon_test() {
+        int a[] =  {-16,27,65,-2,58,-92,-71,-68,-61,-33} ;
+        int re = solutionN2(a); // solution is two slow
+        System.out.println(re);
+    }
+    int[] given ;
+    int indexMinV ;  // store min index
+    int sizeArr ; //
+    public int solutionN2(int[] a) {
+        given = a;
+        int answer = 0 ;
+        indexMinV = 0; // min indedx in given arr
+        sizeArr = a.length;
+        int minv = Integer.MAX_VALUE;
+        for(int i = 0 ; i < a.length ; i++) {
+            if(minv  > a[i] ){
+                minv = a[i] ;
+                indexMinV = i  ;
+            }
 
+        }
+        for(int i = 0 ; i < a.length ; i++) {
+            if(checkRight(i) && checkLeft(i)){
+                answer++;
+            }
+        }
+        return answer ;
     }
 
+    private boolean checkLeft(int i) {
+        int currV = given[i];
+        if(indexMinV  > i){
+            for(int j = 0 ; j < i ;j++){
+                if(given[j] < currV) return false;
+            }
+        }
+        return true;
+    }
 
-
-
-
-
-
-
-
+    private boolean checkRight(int i) {
+        int currV = given[i];
+        if(indexMinV  > i){
+            return true;
+        }else{
+            for(int j = i + 1 ; j < sizeArr ;j++){
+                if(j == indexMinV) continue;
+                if(given[j] < currV) return false;
+            }
+        }
+        return true;
+    }
 
 }
 
