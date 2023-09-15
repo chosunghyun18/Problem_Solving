@@ -118,35 +118,6 @@ public class pg0904 {
         System.out.println(arr);
     }
     @Test
-    void sorting_test_for_java_fast() {
-        List<Integer> arr = new ArrayList<>();
-        arr.add(1);
-        arr.add(5);
-        arr.add(1);
-        arr.add(5);
-        arr.add(18);
-        arr.add(8);
-        quick_sort(arr);
-        double_quick_sort(arr);
-        merge_sort(arr);
-        tim_sorlt(arr);
-    }
-    private void double_quick_sort(List<Integer> arr) {
-
-    }
-    private void quick_sort(List<Integer> arr) {
-
-    }
-    private void tim_sorlt(List<Integer> arr) {
-
-    }
-
-
-
-    private void merge_sort(List<Integer> arr) {
-
-    }
-    @Test
     void brak_test(){  // brak 는 조건문이 있는 loop 를 break 한다.
 
         for(int i =0 ; i < 5  ; i++){
