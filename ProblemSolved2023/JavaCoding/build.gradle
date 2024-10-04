@@ -6,7 +6,7 @@ plugins {
 
 group = 'TestPrac'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '14'
+sourceCompatibility = "16"
 
 repositories {
     mavenCentral()
@@ -22,5 +22,5 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 java {
-    targetCompatibility = JavaVersion.VERSION_14
+    targetCompatibility = JavaVersion.VERSION_16
 }

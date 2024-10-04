@@ -36,7 +36,7 @@ public class GrammarSkillsTest {
     @Test
     public void arrayToArrayListTest() {
 
-        ArrayList<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
+        List<Integer> givenList = new ArrayList<>(Arrays.asList(3, 6,7,2, 1));
 
         List<Integer> numbers = new ArrayList<>(Arrays.asList(1,9,8,2,37,31,12));
 
