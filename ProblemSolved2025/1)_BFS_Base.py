@@ -17,3 +17,12 @@
 
 불이 번지는 시뮬레이션
 '''
+
+
+def bfs_algo() :
+    n = 10
+    return n
+
+bfs_algo() 
+
+
