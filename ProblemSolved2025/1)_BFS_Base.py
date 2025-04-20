@@ -18,7 +18,7 @@
 불이 번지는 시뮬레이션
 '''
 
-
+from collections import deque
 def bfs_algo() :
     n = 10
     return n
